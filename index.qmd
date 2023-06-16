@@ -1,11 +1,48 @@
 ---
-title: "stat202_async"
+title: "STAT 202 Schedule"
+editor_options: 
+  chunk_output_type: console
+execute:
+  
+  message: false
+  warning: false
+  echo: false
+from: markdown+emoji
 ---
 
-This is a Quarto website.
+## Office Hours
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Office hours will be held via [Zoom](https://northwestern.zoom.us/j/99863923813) and posted a week in advanced. They will typically be held on Wednesday and Friday, hours may vary week to week depending on my schedule but I will keep them as consistent as possible. You can also request an individual appointment via email: `danielle.sass@northwestern.edu`.
 
-```{r}
-1 + 1
+Please provide your availability and a days notice for individual meetings.
+
+| Day                | Time       |
+|--------------------|------------|
+| Wednesday, June 21 | 9am - 10am |
+| Friday, June 23    | 3pm - 4pm  |
+
+## Tentative course schedule
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+#library(tidyverse)
+library(gt)
+library(gtExtras)
+library(lubridate)
+library(dplyr)
+library(purrr)
+
+agenda <- tibble(Week = c("Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", ""),
+                 Dates = c("June 20th - 23rd", "June 24th -30th", "July 1st - 7th", "July 8th - 14th", "July 15th - 21st", "July 22nd - 28th", "July 30th"),
+Content = c("Preface - Chapter 2", "Chapter 3 - Chapter 4", "Chapter 5 - 6", "Chapter 7 - 9", "Chapter 10 - 11", "Chapter 12", ""),
+Notes = c("", "Exam 1", "", "Exam 2", "", "Exam 3", "Final Project Due"))
+
+agenda %>% 
+  gt() %>% 
+  cols_move_to_start(
+    columns = Week) %>% 
+  gt_theme_espn() %>% 
+  tab_options(table.width = pct(100),
+              table_body.hlines.color = "#4E2A84",
+              column_labels.background.color = "#4E2A84",
+             row_group.background.color = "#D8D6D6") 
 ```

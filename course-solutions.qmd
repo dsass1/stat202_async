@@ -1,0 +1,57 @@
+---
+title: "Activity Solutions"
+execute:
+  message: false
+  warning: false
+  echo: false
+from: markdown+emoji
+editor_options: 
+  chunk_output_type: console
+---
+
+Activities are graded for completion! It is your responsibility and should be a part of your learning habit to review your activities for correctness. Solutions are posted roughly *3 days after* the due date.
+
+```{r}
+#library(tidyverse)
+library(dplyr)
+library(purrr)
+library(gt)
+library(stringr)
+library(lubridate)
+
+today_ymd <- Sys.Date()
+today <- format(today_ymd,"%a %b %d")
+
+agenda_final <- read.csv("documents/agenda_final.csv") %>% 
+  mutate(time_due = today_ymd - as.Date(due_date),
+         show = ifelse(today_ymd > as.Date(due_date), 1, 0))
+
+
+agenda_show <- agenda_final %>% 
+  filter(show == 1)
+
+```
+
+```{r}
+agenda_show %>% 
+  select(Solutions) %>% 
+  #t() %>% 
+  as.data.frame() %>% 
+  filter(Solutions != "") %>% 
+  gt() %>% 
+  fmt_markdown(columns = c(Solutions) )%>%
+  cols_align(align = "left") %>% 
+  tab_options(column_labels.hidden = TRUE,
+              table.align = "left",
+              table_body.border.top.color = "white",
+              table_body.border.bottom.color = "white",
+              table_body.hlines.color = "white",
+              table.width = pct(100))
+
+```
+
+<br><br>
+
+```{r echo = FALSE}
+knitr::knit_exit()
+```

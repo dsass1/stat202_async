@@ -1,0 +1,79 @@
+---
+title: "Week 1 (June 20 - June 23)"
+editor_options: 
+  chunk_output_type: console
+execute:
+  
+  message: false
+  warning: false
+  echo: false
+from: markdown+emoji
+---
+
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+#library(tidyverse)
+library(gt)
+library(gtExtras)
+library(lubridate)
+library(dplyr)
+library(tidyr)
+library(purrr)
+
+agenda_wk1 <- read.csv("documents/agenda_final.csv") %>% 
+  filter(Week == "Week 1")
+
+lesson1 <- tibble(Watch = c("panopto link"),
+                  Slides = agenda_wk1$Slides[2],
+                  Read = agenda_wk1$Reading[2],
+                  Check = agenda_wk1$Tutorial[2],
+                  Do = agenda_wk1$Activity[2],
+                  Submit = agenda_wk1$submit_act[2])
+
+  # gt() %>% 
+  # # cols_move_to_start(
+  # #   columns = Week) %>% 
+  # gt_theme_espn() %>% 
+  # tab_options(table.width = pct(100),
+  #             table_body.hlines.color = "#4E2A84",
+  #             column_labels.background.color = "#4E2A84",
+  #            row_group.background.color = "#D8D6D6") 
+```
+
+
+::: tutorial
+**Getting Started:**
+
+
+:::
+
+::: slide-deck
+**Lesson 1**
+
+::: video
+Watch lecture [Video](https://youtu.be/_YqEHZccujc)
+:::
+
+::: slides
+[Lecture Slides]()
+:::
+
+::: source
+Read [Source]()
+:::
+
+::: source
+Check your understanding: [Source]()
+:::
+
+
+::: source
+Complete [Source]()
+:::
+
+
+::: homework
+Submit [Source]()
+:::
+
+:::

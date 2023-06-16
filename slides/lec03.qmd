@@ -1,0 +1,313 @@
+---
+title: "Data Visualization <br> Sections 2.4 - 2.6"
+institute: "Department of Statistics and Data Science <br> STAT 202"
+
+logo: nu_logo.png
+format: 
+  revealjs:
+    theme: [default, nu_theme.scss]
+    chalkboard:
+      theme: whiteboard
+      toggleNotesButton: false
+    menu:
+        side: right
+    code-line-numbers: false
+
+execute:
+  message: false
+  warning: false
+  echo: true
+---
+
+```{r}
+#| include: false
+library(ggplot2)
+library(dplyr)
+library(palmerpenguins)
+```
+
+## Today's goals {background-image="images_horst/ggplot2_masterpiece.png" background-size="400px" background-opacity="50%" background-position="85% 50%"}
+
+<br/>
+
+::: columns
+::: {.column width="60%"}
+1.  Create a linegraph
+2.  Create a histogram
+3.  Properly describe a linegraph and histogram
+4.  Facet graphs based on subgroups
+:::
+:::
+
+::: {.absolute top="77%" left="85%" width="500"}
+::: {style="opacity:0.75; font-size: 0.5em"}
+Artwork by @allison_horst
+:::
+:::
+
+## 5NG#2: Linegraphs
+
+Linegraphs show the **relationship** between 2 **numerical** variables.
+
+<br>
+
+. . .
+
+The explanatory (x-axis) variable **must be of** sequential ordering.
+
+<br>
+
+. . .
+
+**Linegraph syntax in R:**
+
+```{r linegraph}
+#| echo: true
+#| eval: false
+ggplot(data= my_data, mapping = aes(x = var1, y = var2)) +
+  geom_line()
+
+```
+
+## 5NG#2: Linegraphs
+
+When describing linegraphs...
+
+::: incremental
+-   Look for pattern going from left to right.
+-   Classify association as positive, negative, or no association.
+-   Classify relationship as linear or non linear.
+-   Check x and y scales to make sure they are appropriate.
+:::
+
+## 5NG#3: Histograms
+
+-   Histograms are used to visualize the **distribution** of a single **numerical** variable.
+
+. . .
+
+-   Histograms display **numerical** data by grouping data into bins of equal width.
+
+. . .
+
+-   There is **no** 'y' position aesthetic for `geom_histogram()` because we are investigating a single variable.
+
+## 5NG#3: Histograms
+
+**Histogram syntax in R:**
+
+```{r histogram}
+#| echo: true
+#| eval: false
+ggplot(data= my_data, aes(x = var1)) +
+  geom_histogram(color = "white", fill = "blue", bins = 10)
+
+```
+
+<br>
+
+. . .
+
+<font size="6"> There are 3 things we look and describe when inspecting a histogram:
+
+-   shape (skew and modality)
+
+-   center (mean or median)
+
+-   spread (range, IQR, or standard deviation)
+
+. . .
+
+Not all distributions have a simple recognizable shape!</font>
+
+::: footer
+Type `colors()` in the **console** to view all possible colors.
+:::
+
+## 5NG#3: Histograms
+
+::: {layout="[30,-5,30,-5,30],[30,-5,30,-5,30],[30,-5,30,-5,30]"}
+![](images_lecture/fig_03unimodal1.png)
+
+![](images_lecture/fig_03unimodal2.png)
+
+![](images_lecture/fig_03unimodal3.png)
+
+![](images_lecture/fig_03bimodal1.png)
+
+![](images_lecture/fig_03bimodal3.png)
+
+![](images_lecture/fig_03bimodal2.png)
+
+![](images_lecture/fig_03multimodal1.png)
+
+![](images_lecture/fig_03multimodal2.png)
+
+![](images_lecture/fig_03uniform.png)
+:::
+
+## Example 1: Histogram bins {.scrollable .smaller}
+
+Which bin size is most appropriate and describe the distribution of penguin body mass.
+
+::: {.absolute top="0%" left="90%" width="100"}
+![](images_lecture/participate_icon.png)
+:::
+
+::: panel-tabset
+## Bins = 7
+
+```{r}
+ggplot(penguins, aes(x=penguins$body_mass_g)) +
+    geom_histogram(color = "white", 
+                   fill = "lightblue", 
+                   bins = 7)+
+    labs(title = "Palmer Penguins Distribution of Body Mass",
+           x = "Body Mass (g)")
+```
+
+## Bins = 18
+
+```{r}
+ggplot(penguins, aes(x=penguins$body_mass_g)) +
+    geom_histogram(color = "white", 
+                   fill = "lightblue", 
+                   bins = 18)+
+    labs(title = "Palmer Penguins Distribution of Body Mass",
+           x = "Body Mass (g)")
+```
+
+## Bins = 29
+
+```{r}
+ggplot(penguins, aes(x=penguins$body_mass_g)) +
+    geom_histogram(color = "white", 
+                   fill = "lightblue", 
+                   bins = 29)+
+    labs(title = "Palmer Penguins Distribution of Body Mass",
+           x = "Body Mass (g)")
+```
+:::
+
+::: footer
+https://northwestern-university.shinyapps.io/lec03_histogram/
+:::
+
+## Example 2: Histogram bins {.scrollable .smaller}
+
+::: {.absolute top="0%" left="90%" width="100"}
+![](images_lecture/participate_icon.png)
+:::
+
+Which bin size is most appropriate and describe the distribution of penguin flipper length.
+
+::: panel-tabset
+## Bins = 15
+
+```{r}
+
+  ggplot(penguins, aes(x=penguins$flipper_length_mm )) +
+    geom_histogram(color = "white", 
+                   fill = "tomato1", 
+                   bins = 15)+
+    labs(title = "Palmer Penguins Distribution of Flipper Length",
+           x = "Flipper Length (mm)")
+```
+
+## Bins = 25
+
+```{r}
+
+  ggplot(penguins, aes(x=penguins$flipper_length_mm )) +
+    geom_histogram(color = "white", 
+                   fill = "tomato1", 
+                   bins = 25)+
+    labs(title = "Palmer Penguins Distribution of Flipper Length",
+           x = "Flipper Length (mm)")
+```
+
+## Bins = 35
+
+```{r}
+
+  ggplot(penguins, aes(x=penguins$flipper_length_mm )) +
+    geom_histogram(color = "white", 
+                   fill = "tomato1", 
+                   bins = 35)+
+    labs(title = "Palmer Penguins Distribution of Flipper Length",
+           x = "Flipper Length (mm)")
+```
+:::
+
+## Faceting {.scrollable .smaller}
+
+-   Faceting is used to make the same plot for different subgroups of the dataset.
+
+-   This is useful for comparing the same variable across different subgroups in the dataset.
+
+-   `facet_wrap(~var)` can be added on to ANY plot type (scatterplot, linegraph, histogram, boxplot, barplot)
+
+<br>
+
+```{r faceting}
+#| eval: false
+ggplot(penguins, aes(x=flipper_length_mm)) +
+    geom_histogram(color = "white", fill = "tomato1", bins = 11) +
+    facet_wrap(~ species)
+```
+
+![](images_lecture/fig_03facet.png){#id .class width="800px" height="600px"}
+
+## Common Coding Errors {.scrollable}
+
+::: {.absolute top="0%" left="90%" width="100"}
+![](images_lecture/participate_icon.png)
+:::
+
+Which of the following are correct?
+
+    a)  
+
+```{r}
+#| eval: false
+ggplot(penguins, aes(x=flipper_length_mm)) +
+  geom_histogram(aes(color = "white"))
+```
+
+    b)  
+
+```{r}
+#| eval: false
+ggplot(penguins, aes(x=flipper_length_mm)) +
+  geom_histogram(color = "white")
+```
+
+    c)  
+
+```{r}
+#| eval: false
+ggplot(penguins) +
+  geom_histogram(x = flipper_length_mm, color = "white")
+```
+
+    d)  
+
+```{r}
+#| eval: false
+ggplot(penguins) +
+  geom_histogram(aes(x = flipper_length_mm) , color = "white")
+```
+
+## Extra information and resources {.scrollable .smaller}
+
+[Wikipedia bin size info](https://en.wikipedia.org/wiki/Histogram#Number_of_bins_and_width)
+
+Helpful guidelines:
+
+-   Larger number of observations generally correspond to larger number of bins needed.
+
+-   You will generally need to test **several** different number of bins to learn about the data and find an appropriate value.
+
+-   Sturges Rule of Thumb for unimodal symmetric distributions: bins = 1 + 3.322\*log(n)
+
+-   Sturge's rule is not great if the data is severely skewed, multi-modal, or for an extremely large number of observations. But it could give you a starting place and then you will want to increase the number of bins until you can properly see the shape.

@@ -4,7 +4,7 @@
     "href": "course-solutions.html",
     "title": "Activity Solutions",
     "section": "",
-    "text": "Activities are graded for completion! It is your responsibility and should be a part of your learning habit to review your activities for correctness. Solutions are posted roughly 3 days after the due date."
+    "text": "Activities are graded for completion! It is your responsibility and should be a part of your learning habit to review your activities for correctness. Solutions are posted after the due date."
   },
   {
     "objectID": "course-project.html",
@@ -46,7 +46,7 @@
     "href": "course-week1.html",
     "title": "Week 1 (June 20 - June 23)",
     "section": "",
-    "text": "Getting Started:\n\n\nLesson 1\n\nWatch lecture Video\n\n\nLecture Slides\n\n\nRead Source\n\n\nCheck your understanding: Source\n\n\nComplete Source\n\n\nSubmit Source"
+    "text": "Getting Started\n\nRead the Syllabus\n\n\nJoin Campuswire\n\nEnrollment Code: 2776\nALL non-grade related questions need to be posted here\nThere is extra credit associated with posting and answering questions.\n\n\n\nComplete the Google Survey. We will use this data later in the class.\n\n\nLogin/create your Northwestern Zoom Account if you do not have one. This will be used for office hours or requested appointments\n\n\nGain access to the Posit Cloud Class Workspace\n\n\nWatch Getting Started Guide\n\n\n\nLesson 1\n\nRead Preface & Ch 1\n\n\nComplete Reading Check 01\n\n\nComplete Activity 01\n\n\nWatch Activity 01 Walkthrough - Fully attempt Activity 01 BEFORE watching this video\n\n\nLecture slides 01 here\n\n\nSubmit RC_01\nSubmit Activity 01\nDue Friday 6/23 11:59pm\n\n\n\nLesson 2\n\nWatch lecture video\n\n\nLecture slides 02 here\n\n\nRead Sections 2.0 - 2.3\n\n\nComplete: Reading Check 02\n\n\nComplete Activity 02\n\n\nSubmit RC_02\nSubmit Activity 02\nDue Friday 6/23 11:59pm\n\n\n\nLesson 3\n\nWatch lecture video\n\n\nLecture slides 03 here\n\n\nRead Sections 2.4 - 2.6\n\n\nComplete: Reading Check 03\n\n\nComplete Activity 03\n\n\nSubmit RC_03\nSubmit Activity 03\nDue Friday 6/23 11:59pm\n\n\n\nLesson 4\n\nWatch lecture video\n\n\nLecture slides 04 here\n\n\nRead Sections 2.7 - 2.9\n\n\nComplete: Reading Check 04\n\n\nComplete Activity 04\n\n\nSubmit RC_04\nSubmit Activity 04\nDue Friday 6/23 11:59pm\n\n\n\nSelected Exercise Guide will be posted later in the week."
   },
   {
     "objectID": "index.html",
@@ -494,7 +494,7 @@
     "href": "slides/lec00.html#todays-agenda",
     "title": "Welcome to STAT 202",
     "section": "Today’s agenda",
-    "text": "Today’s agenda\nMake sure you have completed the following agenda items by the end of class!\n\nReview the syllabus\nVisit the course’s Campuswire page using your @u.northwestern.edu email. Enrollment code: 1457\nGain access to the RStudio Cloud Class Workspace (link on Canvas)\nWe will be using AHA slides during class this quarter.\nComplete the google survey - we will use this data later.\nTest out the homework system Reading Check 01 (RC 01).\nLogin/create your Northwestern Zoom Account if you do not have one. This will be used for office hours or requested appointments."
+    "text": "Today’s agenda\nMake sure you have completed the following agenda items by the end of class!\n\nReview the syllabus\nVisit the course’s Campuswire page using your @u.northwestern.edu email. Enrollment code: 1457\nGain access to the Posit Cloud Class Workspace (link on Canvas)\nWe will be using AHA slides during class this quarter.\nComplete the google survey - we will use this data later.\nTest out the homework system Reading Check 01 (RC 01).\nLogin/create your Northwestern Zoom Account if you do not have one. This will be used for office hours or requested appointments."
   },
   {
     "objectID": "slides/lec06.html#todays-goals",

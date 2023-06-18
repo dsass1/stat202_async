@@ -1,0 +1,52 @@
+---
+title: "Course Extra Credit Opportunities"
+---
+
+## EC Opportunity - Campuswire
+
+We use Campuswire (see syllabus or welcome page for enrollment code) as our preferred platform for announcements and questions about activities, reading checks, or general course-related questions. (Questions about individual grades or appointments should be addressed through email.)
+
+The Campuswire system is designed to get you help quickly and efficiently from your classmates and the instructional team. Rather than emailing your questions to the instructional team, you should post your questions on Campuswire. If a member of the team receives a course-related question via email, they will ask that you post on Campuswire. You can post questions anonymously.
+
+The instructional team will check Campuswire periodically to answer students' questions (do not expect this on weekends or after 5 PM on weekdays). However, we strongly encourage students to answer each other's questions. Students who participate actively on Campuswire will receive bonus final exam points at the end of the quarter.
+
+We measure student participation using the built-in Campuswire reputation system, which awards reputation points based on questions asked, answers given, and upvotes. The levels are as follows:
+
+Students gaining Lvl 1: Starter status by the end of the course will have earned 1 bonus final project point;
+
+Students gaining Lvl 2: Intermediate status by the end of the course will have earned 2 bonus final project points;
+
+Students gaining Lvl 3: Advanced status by the end of the course will have earned 3 bonus final project points.
+
+Note that the highest level requires upvotes. It benefits all students to upvote their peers for responses that they find useful.
+
+In addition, Campuswire provides a list of the top contributors in the class. At the end of the course, the top 3 contributors will have the bonus final project points they earned doubled.
+
+This means that a student who is among the top 3 and has the rank of Lvl 3 (Advanced) will receive 6 bonus final project points. If they are top 3 and have a rank of Lvl 2 (Intermediate) they will receive 4 bonus final project points.
+
+DISCLAIMER
+
+Students attempting or participating in an attempt to game the system will be ineligible for bonus points.
+
+<!-- ## EC Opportunity 2 - Sample Exams -->
+
+<!-- Complete any of the 3 sample exams **by the due date** and upload the completed sample exam to the respective Canvas assignment. Each sample exam will count as 1 bonus points toward activities. Yes, you can get over 100% in this category. -->
+
+<!-- Requirements: -->
+
+<!-- -   name is submitted -->
+<!-- -   every question/exercise must be submitted. -->
+<!-- -   properly downloaded (No NA responses/exercises) -->
+<!-- -   in the comments of the submission report whether or not there were any issues. If there were none simply state "no issues" -->
+
+<!-- **If you do not complete every one of those requirements you will not get credit.** This is checking that 1) there are no bugs for me to fix prior to the exam and 2) you know how to properly submit an exam. It will NOT be graded for accuracy. -->
+
+<!-- ## EC Opportunity 3 - Aha Slides -->
+
+<!-- Our top 5 participants will receive 1 bonus point towards activities. Points reset after each exam meaning you have 3 opportunities to be a top 5 participant. -->
+
+<!-- ## EC Opportunity 3 - Stats and Data Science Articles -->
+
+<!-- Check out the tab "Stats and Data IRL". Statistics and data science is an interdisciplinary field that is often used in a variety of areas of study (biology, business, ecology, healthcare, psychology, sociology, etc.) At the top of the page are a few interesting articles about statistics and/or data science. Select an article to read and write a one to two paragraph response describing what you learned from the article and how statistics/data science was used. -->
+
+<!-- You can submit 1 response for 1 bonus point toward participation. Yes, you can get over 100% in this category. -->

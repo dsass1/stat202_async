@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>STAT 202 - Final Project</title>
+<title>STAT 202 - Course Extra Credit Opportunities</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,6 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./course-solutions.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -72,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Final Project</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./course-syllabus.html">Additional Resources</a></li><li class="breadcrumb-item"><a href="./course-ec.html">Extra Credit</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -136,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-ec.html" class="sidebar-item-text sidebar-link">
+  <a href="./course-ec.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Extra Credit</span></a>
   </div>
 </li>
@@ -152,19 +153,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#choose-a-group" id="toc-choose-a-group" class="nav-link active" data-scroll-target="#choose-a-group">Choose a Group</a></li>
-  <li><a href="#choose-a-dataset" id="toc-choose-a-dataset" class="nav-link" data-scroll-target="#choose-a-dataset">Choose a Dataset</a></li>
-  <li><a href="#project-outline" id="toc-project-outline" class="nav-link" data-scroll-target="#project-outline">Project outline</a></li>
-  <li><a href="#project-rubric-50-points" id="toc-project-rubric-50-points" class="nav-link" data-scroll-target="#project-rubric-50-points">Project rubric (50 points)</a></li>
+  <li><a href="#ec-opportunity---campuswire" id="toc-ec-opportunity---campuswire" class="nav-link active" data-scroll-target="#ec-opportunity---campuswire">EC Opportunity - Campuswire</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dsass1/stat202_async/edit/main/course-project.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/dsass1/stat202_async/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dsass1/stat202_async/edit/main/course-ec.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/dsass1/stat202_async/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Final Project</h1>
+<h1 class="title">Course Extra Credit Opportunities</h1>
 </div>
 
 
@@ -179,171 +177,33 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>The final project is to be completed in <strong>groups of 3-6</strong>. Why? 1) Group work and collaboration is a good life skill. 2) There is no possible way we can grade 150 projects by the time grades are due.</p>
-<p>The final project is due on <strong>Sunday June 4th 11:59pm</strong>. Groups are expected to submit their project electronically to Canvas, similar to how you submit your work for daily activities. You will type your project directly into a qmd file and knit an html document. You should <strong>submit both your .qmd and .html</strong> file (and dataset if you chose one other than the one I provided). <strong>Only ONE person</strong> from the group needs to submit the project. Make sure everyone’s name is on the project. Failure to submit both the .qmd and .html will result in a deduction.</p>
-<p>This should read as a report! The project should be in paragraphs and complete sentences within the context of your dataset when appropriate. Do not bold or italicize your entire paper. Do not begin a section with code, you should introduce context before showing graphics/code. Students are expected to also show their work (i.e., include your R code). Your target audience is the grader and myself, we want to see your code and the output of your code.</p>
-<section id="choose-a-group" class="level2">
-<h2 class="anchored" data-anchor-id="choose-a-group">Choose a Group</h2>
-<p>You must join your group on Canvas! Grades are linked to these groups - I will <strong>not</strong> hunt you down. To get a grade you must be in a group. This is 10% of your grade, you do not want a 0 for the project. On Canvas go to the <strong>People</strong> tab, and select <strong>Final Project Group</strong> to add yourself to a group.</p>
-<p>Everyone in your group must agree to be in your group. I should not be getting emails stating “<em>Jane Doe</em> is in my group and we don’t know who that is”. If you do not know anyone in the class, Groups 1 - 9 are titled “Random Join”. Anyone can join them. You can communicate with your group through the Canvas group, make a group on Campuswire, or exchange email.</p>
-<p>The most effective ways groups have found to work together is by creating a Google drive document that members can copy/paste code into to share and jointly edit the report. <em>It is very obvious when groups have a single student take a section of the project rather than working collaboratively, those groups tend to do poorly on the project.</em></p>
-<p><img src="images/canvas_groups.png" class="img-fluid"></p>
-</section>
-<section id="choose-a-dataset" class="level2">
-<h2 class="anchored" data-anchor-id="choose-a-dataset">Choose a Dataset</h2>
-<p>For anyone complaining that we don’t use enough “real-life” data examples this is your chance!</p>
-<p><strong>Option 1:</strong></p>
-<p>You may use a dataset that I provide. This dataset will be pre-loaded and located in the RStudio Cloud Project.</p>
-<ul>
-<li><strong>Class Survey Data</strong>: You cannot use any analysis that is an existing question on your exam. You may think of a similar question but it should not be identical. You must use the full dataset, the midterm and final remove certain columns and observations to reduce time computations. See the <a href="./documents/project/survey_fa22_codebook"><strong>codebook</strong></a> for an explanation of the variables.</li>
-</ul>
-<p><strong>Option 2:</strong></p>
-<p>As a group you can pick a dataset of interest to explore! This can be any dataset of your choice that meets the following criteria:</p>
-<ul>
-<li><p>At least 100 observations</p></li>
-<li><p>At least 10 variables</p></li>
-<li><p>The variables should be a mix of both categorical and numeric</p></li>
-<li><p>At least one variable that can be used as a reasonable response variable for regression</p></li>
-<li><p>You may not use data that has previously been used in any Activity</p></li>
-<li><p>You may not use any data that is a part of the ISDSdatasets, ggplot2, or palmerpenguins packages.</p></li>
-</ul>
-<p>If you choose your own dataset, you will need to upload your data to the RStudio Cloud Project. Under the Files Pane, click on the “data” folder, then click the “upload” icon.</p>
-<p><br></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/project_upload.png" class="img-fluid figure-img" width="376"></p>
-</figure>
-</div>
-<p><br></p>
-<p>Where to find data?</p>
-<ul>
-<li><p><a href="https://www.kaggle.com/datasets">Kaggle</a>: Kaggle offers aggregated datasets, but it’s a community hub rather than a search engine. Kaggle launched in 2010 with a number of machine learning competitions, which subsequently solved problems for the likes of NASA and Ford. It has since evolved into a renowned open data platform, offering cloud-based collaboration for data scientists, as well as educational tools for teaching artificial intelligence and data analysis techniques… plus, of course, tons of great datasets covering almost any topic you can imagine.</p></li>
-<li><p><a href="https://datasetsearch.research.google.com/">Google Dataset Search</a>: Launched in 2018, Google Dataset Search is like Google’s standard search engine, but strictly for data. While it’s not the best tool if you prefer to browse, if you have a particular topic or keyword in mind, it won’t disappoint. Google Dataset Search aggregates data from external sources, providing a clear summary of what’s available, a description of the data, who it’s provided by, and when it was last updated. It’s an excellent place to start.</p></li>
-<li><p><a href="https://www.census.gov/">U.S. Census Bureau</a>: the U.S. Census Bureau publishes reams of demographic data at the state, city, and even zip code level. It is a fantastic data set for students interested in creating geographic data visualizations and can be accessed on the Census Bureau website. Alternatively, the data can be accessed via an API.</p></li>
-<li><p><a href="https://www.data.gov/">Data.gov</a>: In 2015, the US Government made all its data publicly available. With over 200,000 datasets covering everything from climate change to crime, you can lose yourself in the database for hours. For a government website, it has some surprisingly user-friendly search functions, including the ability to drill down by geographical area, organization type, and file format. Search results are also clearly labeled at federal, state, county, and city levels.&nbsp;</p></li>
-<li><p><a href="https://data.fivethirtyeight.com/">FiveThirtyEight</a>: If you’re interested in data at all, you’ve almost certainly heard of FiveThirtyEight; it’s one of the best-established data journalism outlets in the world. They write interesting data-driven articles, like “Don’t blame a skills gap for lack of hiring in manufacturing” and “2016 NFL Predictions”. What you may not know is that FiveThirtyEight also makes the data sets used in its articles available online on Github and on its own data portal.</p></li>
-<li><p><a href="https://crime-data-explorer.fr.cloud.gov/">FBI Crime Data Explorer</a>: If you’re fascinated by crime, the FBI Crime Data Explorer is the one for you. It provides a broad collection of crime statistics from a variety of state organizations (universities and local law enforcement) and government (on a local, regional, and state-level). Pull data on hate crimes, officer assaults, homicides, and more. It also includes some helpful user guides to support data navigation.</p></li>
-<li><p><a href="https://github.com/awesomedata/awesome-public-datasets">Awesome Public Datasets</a>: This github hosts a library of awesome, public datasets! They are all sorted by category and link you straight to the hosting website.</p></li>
-<li><p><a href="https://www.sports-reference.com/">Sports Reference</a>: “Our Primary Aim is to answer our users’ questions with the easiest-to-use, fastest, and most complete sports statistics anywhere. If we have some fun in the process, that’s good too.”</p></li>
-<li><p><a href="https://data.worldbank.org/">The World Bank</a>: The World Bank is a global development organization that offers loans and advice to developing countries. The World Bank regularly funds programs in developing countries, then gathers data to monitor the success of these programs. You can browse world bank data sets directly. The data sets have many missing values (which is great for cleaning practice).</p></li>
-<li><p><a href="https://nces.ed.gov/">National Center for Education Statistics</a>: The primary federal entity for collecting and analyzing data related to education.</p></li>
-<li><p><a href="https://developer.spotify.com/documentation/web-api/">Spotify API</a>: Discover the millions of tracks, artists, or albums on Spotify in the user’s local market or a specific Spotify market.</p></li>
-<li><p>Anywhere you want to search!</p></li>
-</ul>
-</section>
-<section id="project-outline" class="level2">
-<h2 class="anchored" data-anchor-id="project-outline">Project outline</h2>
-<p>Once you have chosen your dataset you will need to conduct an analysis and create a report. This is a report, meaning anytime you have code you should be explaining what you are doing before the code and any conclusions/findings that result after the code. In other words, there should not be random plots/code without any explanation.</p>
-<ul>
-<li><p>Introduction: Should introduce your dataset, where the data came from, why it is of interest, and any other general introductory statements. Is your dataset generalizable, and if so what is the population of interest? Cite your data link if necessary.</p></li>
-<li><p>Data Overview: Here you should describe your data. How many variables are in your dataset? How many observations? Are there any missingness issues and why might that be the case? Are there any potential data issues such as impossible/weird values?</p></li>
-<li><p>EDA: You will need to create a minimum of 2 graphics to explore your data. You cannot use the two same graphs (ie: cannot do 2 scatterplots). These graphics must be made using ggplot, however you are welcome to explore other geom layers that we have not focused on in this class beyond the 5NG. Each graph must have wrangling code that provides <strong>appropriate calculations</strong> to support the graph. This is a report, meaning there should be a proper <strong>description</strong> and explanation of the graph.</p></li>
-<li><p>Regression: Choose 1 numeric and 1 categorical variable to predict a numeric variable. You choose if this is a parallel slopes or interaction model. Write out the equation to your model. Interpret each coefficient in the context of the problem. Provide a graph of the fitted lines.^1</p></li>
-<li><p>Confidence interval: Develop a confidence interval related research question. Construct you confidence interval, state your confidence level and appropriately interpret in the context of the problem.</p></li>
-<li><p>Hypothesis test: Develop a hypothesis test related research question. State your null and alternative hypothesis, specify your alpha, perform the hypothesis test, and appropriately interpret in the context of the problem.^2</p></li>
-<li><p>Conclusion: State any concluding remarks.</p></li>
-</ul>
-<p><strong>1: Advanced tip for regression: If you want to visualize your prediction you can plot the observed response on the x axis and the fitted values on the y axis.</strong></p>
-<p><strong>2: The confidence interval and hypothesis test must be answering different research questions. The confidence interval/hypothesis test cannot be of the same type (options: mean, proportion, difference in mean, difference in proportion, slope)</strong></p>
-</section>
-<section id="project-rubric-50-points" class="level2">
-<h2 class="anchored" data-anchor-id="project-rubric-50-points">Project rubric (50 points)</h2>
-<table class="table">
-<colgroup>
-<col style="width: 8%">
-<col style="width: 14%">
-<col style="width: 1%">
-<col style="width: 14%">
-<col style="width: 23%">
-<col style="width: 37%">
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>0</th>
-<th></th>
-<th>2</th>
-<th></th>
-<th>4</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Neatness, Organization, Introduction, Conclusion</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>Use complete sentences; minimal typos; reads as a report; names; headers formatted correctly; suppress warning or messages; introduction and conclusion present with minimum requirements</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong>0</strong></td>
-<td></td>
-<td><strong>1</strong></td>
-<td></td>
-<td><strong>2</strong></td>
-</tr>
-<tr class="odd">
-<td>Data Overview</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>Thoroughly explored your data using at a minimum the criteria in the project outline.</td>
-</tr>
-<tr class="even">
-<td></td>
-<td><strong>1</strong></td>
-<td><strong>2</strong></td>
-<td><strong>3</strong></td>
-<td><strong>4</strong></td>
-<td><strong>5</strong></td>
-</tr>
-<tr class="odd">
-<td>EDA: Exploration 1 (x2)</td>
-<td>Simple plot/wrangling AND improper explanation AND major error with code/data use</td>
-<td></td>
-<td>Simple plot/wrangling OR improper explanation OR major error with code/data use</td>
-<td></td>
-<td>Used a graph and appropriate data wrangling summary statistics to support the graph. Proper explanation and introduction to the exploration. Sufficiently complex, you are showcasing what you learned this quarter.</td>
-</tr>
-<tr class="even">
-<td>EDA: Exploration 2 (x2)</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>Same criteria as above. Must be a different type of plot.</td>
-</tr>
-<tr class="odd">
-<td>Regression (x2 pts)</td>
-<td></td>
-<td></td>
-<td>Incorrect interpretation OR 2 issues</td>
-<td></td>
-<td>State the model goal. Used multiple regression model. Stated the model equation. Interpreted the coefficients in the context of the problem. Plot matches model.</td>
-</tr>
-<tr class="even">
-<td>CI (4 points)</td>
-<td></td>
-<td></td>
-<td>Incorrect interpretation OR 2 issues</td>
-<td>Stated the research question of interest. Stated CI level. Confidence interval is correct. Interpretation in the context of the problem</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Hypothesis test (x2 points)</td>
-<td></td>
-<td></td>
-<td>Incorrect interpretation OR 2 issues</td>
-<td></td>
-<td>Stated the research question of interest. Stated alpha level. Defined H0 and HA using proper notation. Hypothesis test conducted correctly. Interpretation in the context of the problem</td>
-</tr>
-</tbody>
-</table>
-<p>**Sufficiently complex exploration can mean many things. It can mean doing data wrangling before the plot to narrow down the data of interest or it can mean doing a bi-variate exploration (2 variables or more) and explaining how the variables relate. Ex: Simple exploration: histogram of a single variable using your entire dataset and calculating the mean and standard deviation. Complex exploration: faceting a histogram by a categorical variable and calculating summary statistics by category to explain how different categories vary.</p>
-<p>**Be a problem solver. If you don’t know how to write a regression equation or hypothesis copy an example from an activity and modify for your problem.</p>
+<section id="ec-opportunity---campuswire" class="level2">
+<h2 class="anchored" data-anchor-id="ec-opportunity---campuswire">EC Opportunity - Campuswire</h2>
+<p>We use Campuswire (see syllabus or welcome page for enrollment code) as our preferred platform for announcements and questions about activities, reading checks, or general course-related questions. (Questions about individual grades or appointments should be addressed through email.)</p>
+<p>The Campuswire system is designed to get you help quickly and efficiently from your classmates and the instructional team. Rather than emailing your questions to the instructional team, you should post your questions on Campuswire. If a member of the team receives a course-related question via email, they will ask that you post on Campuswire. You can post questions anonymously.</p>
+<p>The instructional team will check Campuswire periodically to answer students’ questions (do not expect this on weekends or after 5 PM on weekdays). However, we strongly encourage students to answer each other’s questions. Students who participate actively on Campuswire will receive bonus final exam points at the end of the quarter.</p>
+<p>We measure student participation using the built-in Campuswire reputation system, which awards reputation points based on questions asked, answers given, and upvotes. The levels are as follows:</p>
+<p>Students gaining Lvl 1: Starter status by the end of the course will have earned 1 bonus final project point;</p>
+<p>Students gaining Lvl 2: Intermediate status by the end of the course will have earned 2 bonus final project points;</p>
+<p>Students gaining Lvl 3: Advanced status by the end of the course will have earned 3 bonus final project points.</p>
+<p>Note that the highest level requires upvotes. It benefits all students to upvote their peers for responses that they find useful.</p>
+<p>In addition, Campuswire provides a list of the top contributors in the class. At the end of the course, the top 3 contributors will have the bonus final project points they earned doubled.</p>
+<p>This means that a student who is among the top 3 and has the rank of Lvl 3 (Advanced) will receive 6 bonus final project points. If they are top 3 and have a rank of Lvl 2 (Intermediate) they will receive 4 bonus final project points.</p>
+<p>DISCLAIMER</p>
+<p>Students attempting or participating in an attempt to game the system will be ineligible for bonus points.</p>
+<!-- ## EC Opportunity 2 - Sample Exams -->
+<!-- Complete any of the 3 sample exams **by the due date** and upload the completed sample exam to the respective Canvas assignment. Each sample exam will count as 1 bonus points toward activities. Yes, you can get over 100% in this category. -->
+<!-- Requirements: -->
+<!-- -   name is submitted -->
+<!-- -   every question/exercise must be submitted. -->
+<!-- -   properly downloaded (No NA responses/exercises) -->
+<!-- -   in the comments of the submission report whether or not there were any issues. If there were none simply state "no issues" -->
+<!-- **If you do not complete every one of those requirements you will not get credit.** This is checking that 1) there are no bugs for me to fix prior to the exam and 2) you know how to properly submit an exam. It will NOT be graded for accuracy. -->
+<!-- ## EC Opportunity 3 - Aha Slides -->
+<!-- Our top 5 participants will receive 1 bonus point towards activities. Points reset after each exam meaning you have 3 opportunities to be a top 5 participant. -->
+<!-- ## EC Opportunity 3 - Stats and Data Science Articles -->
+<!-- Check out the tab "Stats and Data IRL". Statistics and data science is an interdisciplinary field that is often used in a variety of areas of study (biology, business, ecology, healthcare, psychology, sociology, etc.) At the top of the page are a few interesting articles about statistics and/or data science. Select an article to read and write a one to two paragraph response describing what you learned from the article and how statistics/data science was used. -->
+<!-- You can submit 1 response for 1 bonus point toward participation. Yes, you can get over 100% in this category. -->
 
 
 </section>
@@ -596,6 +456,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./course-solutions.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Activity solutions</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

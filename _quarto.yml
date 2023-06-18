@@ -34,7 +34,7 @@ website:
         - href: index.qmd
           text: About
         - href: course-week1.qmd
-          text: Week 1
+          text: Week 1 (June 20 - 23)
         # - href: course-project.qmd
         #   text: Final project
         # - href: course-anu.qmd

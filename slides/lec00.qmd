@@ -23,7 +23,7 @@ Make sure you have completed the following agenda items by the end of class!
 
 1.  Review the syllabus
 2.  Visit the course's [Campuswire page](https://campuswire.com/p/G6C07549E) using your @u.northwestern.edu email. Enrollment code: 1457
-3.  Gain access to the RStudio Cloud Class Workspace (link on Canvas)
+3.  Gain access to the Posit Cloud Class Workspace (link on Canvas)
 4.  We will be using [AHA slides](https://ahaslides.com/202STAT) during class this quarter.
 5.  Complete the [google survey](https://forms.gle/nZBxA9gwjoMEvMtP9) - we will use this data later.
 6.  Test out the homework system Reading Check 01 (RC 01).

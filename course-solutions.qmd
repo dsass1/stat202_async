@@ -9,7 +9,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-Activities are graded for completion! It is your responsibility and should be a part of your learning habit to review your activities for correctness. Solutions are posted roughly *3 days after* the due date.
+Activities are graded for completion! It is your responsibility and should be a part of your learning habit to review your activities for correctness. Solutions are posted *after* the due date.
 
 ```{r}
 #library(tidyverse)

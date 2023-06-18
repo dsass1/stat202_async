@@ -10,7 +10,6 @@ execute:
 from: markdown+emoji
 ---
 
-
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
 #library(tidyverse)
 library(gt)
@@ -41,39 +40,173 @@ lesson1 <- tibble(Watch = c("panopto link"),
 ```
 
 
-::: tutorial
-**Getting Started:**
+::: slide-deck
+**Getting Started**
 
+::: source
+Read the [Syllabus](course-syllabus.html)
+:::
+
+::: source
+Join [Campuswire](https://campuswire.com/p/G84F5E750)
+
+- Enrollment Code: 2776
+- ALL non-grade related questions need to be posted here
+- There is extra credit associated with posting and answering questions.
+:::
+
+::: source
+Complete the [Google Survey](https://forms.gle/U3c1638vD9KSjXY9A). We will use this data later in the class.
+:::
+
+::: source
+Login/create your [Northwestern Zoom Account](https://northwestern.zoom.us/) if you do not have one. This will be used for office hours or requested appointments
+:::
+
+::: source
+Gain access to the [Posit Cloud Class Workspace](https://posit.cloud/spaces/321338/join?access_code=BB-Cb4PMABkmHV9nMMqwP4162fYUVhPASlTPPdlY)
+:::
+
+::: video
+Watch [Getting Started Guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fe00baa1-56ca-47b8-a104-b02500d52a65)
+:::
 
 :::
+
 
 ::: slide-deck
 **Lesson 1**
 
+::: source
+Read [Preface & Ch 1](https://nustat.github.io/intro-stat-data-sci/)
+:::
+
+::: source
+Complete [Reading Check 01](https://amkuyper.shinyapps.io/01_intro/)
+:::
+
+::: source
+Complete [Activity 01](https://posit.cloud/spaces/321338/content/5176475)
+:::
+
 ::: video
-Watch lecture [Video](https://youtu.be/_YqEHZccujc)
+Watch [Activity 01 Walkthrough](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fe00baa1-56ca-47b8-a104-b02500d52a65)
+- Fully attempt Activity 01 BEFORE watching this video
 :::
 
 ::: slides
-[Lecture Slides]()
+[Lecture slides 01 here](/slides/lec01.html)
 :::
-
-::: source
-Read [Source]()
-:::
-
-::: source
-Check your understanding: [Source]()
-:::
-
-
-::: source
-Complete [Source]()
-:::
-
 
 ::: homework
-Submit [Source]()
+Submit [RC_01](https://canvas.northwestern.edu/courses/192604/assignments/1244669)
+
+Submit [Activity 01](https://canvas.northwestern.edu/courses/192604/assignments/1244634)
+
+**Due Friday 6/23 11:59pm**
+:::
 :::
 
+
+::: slide-deck
+**Lesson 2**
+
+::: video
+Watch [lecture video](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b36326dd-acfa-4992-835c-b02500d52a36)
+:::
+
+::: slides
+[Lecture slides 02 here](/slides/lec02.html)
+:::
+
+::: source
+Read [Sections 2.0 - 2.3](https://nustat.github.io/intro-stat-data-sci/02-visualization.html)
+:::
+
+::: source
+Complete: [Reading Check 02](https://amkuyper.shinyapps.io/02_ggplot1/)
+:::
+
+::: source
+Complete [Activity 02](https://posit.cloud/spaces/321338/content/5176479)
+:::
+
+::: homework
+Submit [RC_02](https://canvas.northwestern.edu/courses/192604/assignments/1244670)
+
+Submit [Activity 02](https://canvas.northwestern.edu/courses/192604/assignments/1244635)
+
+**Due Friday 6/23 11:59pm**
+:::
+:::
+
+
+::: slide-deck
+**Lesson 3**
+
+::: video
+Watch [lecture video](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=39b31462-9c6b-4ed2-8e12-b02500d529c4)
+:::
+
+::: slides
+[Lecture slides 03 here](/slides/lec03.html)
+:::
+
+::: source
+Read [Sections 2.4 - 2.6](https://nustat.github.io/intro-stat-data-sci/02-visualization.html)
+:::
+
+::: source
+Complete: [Reading Check 03](https://amkuyper.shinyapps.io/03_ggplot2/)
+:::
+
+::: source
+Complete [Activity 03](https://posit.cloud/spaces/321338/content/5176480)
+:::
+
+::: homework
+Submit [RC_03](https://canvas.northwestern.edu/courses/192604/assignments/1244671)
+
+Submit [Activity 03](https://canvas.northwestern.edu/courses/192604/assignments/1244636)
+
+**Due Friday 6/23 11:59pm**
+:::
+:::
+
+
+::: slide-deck
+**Lesson 4**
+
+::: video
+Watch [lecture video](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8b2b1856-a6e1-4ff0-a634-b02500d52991)
+:::
+
+::: slides
+[Lecture slides 04 here](/slides/lec04.html)
+:::
+
+::: source
+Read [Sections 2.7 - 2.9](https://nustat.github.io/intro-stat-data-sci/02-visualization.html)
+:::
+
+::: source
+Complete: [Reading Check 04](https://amkuyper.shinyapps.io/04_ggplot3/)
+:::
+
+::: source
+Complete [Activity 04](https://posit.cloud/spaces/321338/content/5176481)
+:::
+
+::: homework
+Submit [RC_04](https://canvas.northwestern.edu/courses/192604/assignments/1244672)
+
+Submit [Activity 04](https://canvas.northwestern.edu/courses/192604/assignments/1244637)
+
+**Due Friday 6/23 11:59pm**
+:::
+:::
+
+
+::: lab
+Selected Exercise Guide will be posted later in the week.
 :::

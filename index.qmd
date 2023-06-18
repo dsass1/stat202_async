@@ -10,6 +10,8 @@ execute:
 from: markdown+emoji
 ---
 
+Welcome to STAT 202! On the side tab click on Week 1. Here you will find all of the agenda items and lessons for the week. If you have any content related questions you can post them to Campuswire. The little person icon under the logo on the left tab will be the shortcut to Campuswire and the monitor icon is a shortcut to the office hour zoom link.
+
 ## Office Hours
 
 Office hours will be held via [Zoom](https://northwestern.zoom.us/j/99863923813) and posted a week in advanced. They will typically be held on Wednesday and Friday, hours may vary week to week depending on my schedule but I will keep them as consistent as possible. You can also request an individual appointment via email: `danielle.sass@northwestern.edu`.

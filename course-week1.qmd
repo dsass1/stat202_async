@@ -208,5 +208,10 @@ Submit [Activity 04](https://canvas.northwestern.edu/courses/192604/assignments/
 
 
 ::: lab
-Selected Exercise Guide will be posted later in the week.
+Selected Exercise Guide for Activities 2 - 4. Suggest watching AFTER you have attempted the activity.
+
+
+::: video
+Watch [selected solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=661d6219-cdb9-4d90-b1eb-b02900f70e88)
+:::
 :::

@@ -158,7 +158,7 @@ Important:
 - Make sure you SUBMIT every Exercise and Question (not just run code you must click Submit). Unsubmitted exercises = 0
 - View your submissions BEFORE locking the exam. Once you lock the exam no changes can be made.
 - Strongly suggest taking the practice exam prior.
-- I do not check my email on the weekend. If you run into technical difficulties over the weekend, I will respond on Monday. Strongly suggest completing the Exam on Friday.
+- I do not check my email on the weekend. If you run into technical difficulties over the weekend, I will respond on Monday. Strongly suggest completing the Exam on Friday if you are ready for it.
 - Good luck!
 
 Take [Exam 1](https://canvas.northwestern.edu/courses/192604/assignments/1244660)

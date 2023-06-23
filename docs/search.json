@@ -214,7 +214,7 @@
     "href": "index.html",
     "title": "STAT 202 Schedule",
     "section": "",
-    "text": "Welcome to STAT 202! On the side tab click on Week 1. Here you will find all of the agenda items and lessons for the week. If you have any content related questions you can post them to Campuswire. The little person icon under the logo on the left tab will be the shortcut to Campuswire and the monitor icon is a shortcut to the office hour zoom link."
+    "text": "Welcome to STAT 202! On the side tab click on the current Week. Here you will find all of the agenda items and lessons for the week. If you have any content related questions you can post them to Campuswire. The little person icon under the logo on the left tab will be the shortcut to Campuswire and the monitor icon is a shortcut to the office hour zoom link."
   },
   {
     "objectID": "index.html#tentative-course-schedule",
@@ -872,6 +872,13 @@
     "href": "index.html#office-hours",
     "title": "STAT 202 Schedule",
     "section": "Office Hours",
-    "text": "Office Hours\nOffice hours will be held via Zoom and posted a week in advanced. They will typically be held on Wednesday and Friday, hours may vary week to week depending on my schedule but I will keep them as consistent as possible. You can also request an individual appointment via email: danielle.sass@northwestern.edu.\nPlease provide your availability and a days notice for individual meetings.\n\n\n\nDay\nTime\n\n\n\n\nWednesday, June 21\n9am - 10am\n\n\nFriday, June 23\n3pm - 4pm"
+    "text": "Office Hours\nOffice hours will be held via Zoom and posted a week in advanced. They will typically be held on Wednesday and Friday, hours may vary week to week depending on my schedule but I will keep them as consistent as possible. You can also request an individual appointment via email: danielle.sass@northwestern.edu.\nPlease provide your availability and a days notice for individual meetings. Do not expect a response in the evenings or on weekends!\n\n\n\nDay\nTime\n\n\n\n\nWednesday, June 28\n9am - 10am\n\n\nFriday, June 30\n12pm - 1pm"
+  },
+  {
+    "objectID": "course-week2.html",
+    "href": "course-week2.html",
+    "title": "Week 2 (June 24 - June 30)",
+    "section": "",
+    "text": "Reminders!\n\nMake sure you review the Activity Solutions\nI suggest spacing out the lessons so you are working on 1 a day.\nLessons this week are due by Wednesday because Exam 1 will be available Thursday.\n\n\n\nLesson 5\n\nWatch lecture video\n\n\nLecture slides 05 here\n\n\nRead Sections 3.0 - 3.3\n\n\nComplete: Reading Check 05\n\n\nComplete Activity 05\n\n\nSubmit RC_05\nSubmit Activity 05\nDue Wednesday 6/28 11:59pm\n\n\n\nLesson 6\n\nWatch lecture video\n\n\nLecture slides 06 here\n\n\nRead Sections 3.4 - 3.9\n\n\nComplete: Reading Check 06\n\n\nComplete Activity 06\n\n\nSubmit RC_06\nSubmit Activity 06\nDue Wednesday 6/28 11:59pm\n\n\n\nLesson 7\nChapter 4 will not be on the test however going forward you will be expected to know how to read in your own data and use the skim function.\n\n\n\n\nLecture slides 07 here\n\n\nRead Chapter 4\n\n\nComplete: Reading Check 07\n\n\nComplete Activity 07\n\n\nSubmit RC_07\nSubmit Activity 07\nDue Wednesday 6/28 11:59pm\n\n\n\nSelected Exercise Guide for Activities 5 - 7. Suggest watching AFTER you have attempted the activity.\n\nUpcoming \n\n\n\nPractice Exam Upcoming\n\n\nExam 1 will become available Thursday June 29th and due by Sunday July 2nd 11:59pm.\nImportant:\n\nSet a timer for 50 minutes (or your ANU time) anything submitted after 50 minutes will receive a 0.\nStrongly suggest making a one page “cheat-sheet”. While this exam is open note/open book - if you do not know the material you will NOT finish within the time limit.\nMake sure you SUBMIT every Exercise and Question (not just run code you must click Submit). Unsubmitted exercises = 0\nView your submissions BEFORE locking the exam. Once you lock the exam no changes can be made.\nStrongly suggest taking the practice exam prior.\nI do not check my email on the weekend. If you run into technical difficulties over the weekend, I will respond on Monday. Strongly suggest completing the Exam on Friday.\nGood luck!\n\nTake Exam 1"
   }
 ]

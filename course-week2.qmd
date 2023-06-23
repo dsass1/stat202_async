@@ -1,0 +1,165 @@
+---
+title: "Week 2 (June 24 - June 30)"
+editor_options: 
+  chunk_output_type: console
+execute:
+  
+  message: false
+  warning: false
+  echo: false
+from: markdown+emoji
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+#library(tidyverse)
+library(gt)
+library(gtExtras)
+library(lubridate)
+library(dplyr)
+library(tidyr)
+library(purrr)
+
+agenda_wk2 <- read.csv("documents/agenda_final.csv") %>% 
+  filter(Week == "Week 2")
+
+
+```
+
+::: slide-deck
+**Reminders!**
+
+- Make sure you review the [Activity Solutions](/course-solutions.html)
+- I suggest spacing out the lessons so you are working on 1 a day.
+- Lessons this week are due by Wednesday because Exam 1 will be available Thursday. 
+:::
+
+
+::: slide-deck
+**Lesson 5**
+
+::: video
+Watch [lecture video](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=787d6a03-98bf-4429-854f-b02a01641c8a)
+:::
+
+::: slides
+[Lecture slides 05 here](/slides/lec05.html)
+:::
+
+::: source
+Read [Sections 3.0 - 3.3](https://nustat.github.io/intro-stat-data-sci/03-wrangling.html)
+
+:::
+
+::: source
+Complete: [Reading Check 05](https://amkuyper.shinyapps.io/05_wrangling1/)
+:::
+
+::: source
+Complete [Activity 05](https://posit.cloud/spaces/321338/content/5176483)
+:::
+
+::: homework
+Submit [RC_05](https://canvas.northwestern.edu/courses/192604/assignments/1244673)
+
+Submit [Activity 05](https://canvas.northwestern.edu/courses/192604/assignments/1244638)
+
+**Due Wednesday 6/28 11:59pm**
+:::
+:::
+
+::: slide-deck
+**Lesson 6**
+
+::: video
+Watch [lecture video](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=31b57142-c3fd-41f2-bccb-b02a01641c4e)
+:::
+
+::: slides
+[Lecture slides 06 here](/slides/lec06.html)
+:::
+
+::: source
+Read [Sections 3.4 - 3.9](https://nustat.github.io/intro-stat-data-sci/03-wrangling.html)
+:::
+
+::: source
+Complete: [Reading Check 06](https://amkuyper.shinyapps.io/06_wrangling2/)
+:::
+
+::: source
+Complete [Activity 06](https://posit.cloud/spaces/321338/content/5176484)
+:::
+
+::: homework
+Submit [RC_06](https://canvas.northwestern.edu/courses/192604/assignments/1244674)
+
+Submit [Activity 06](https://canvas.northwestern.edu/courses/192604/assignments/1244639)
+
+**Due Wednesday 6/28 11:59pm**
+:::
+:::
+
+::: slide-deck
+**Lesson 7**
+
+Chapter 4 will not be on the test however going forward you will be expected to know how to read in your own data and use the `skim` function.
+
+<!-- ::: video -->
+<!-- Watch [lecture video](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8b2b1856-a6e1-4ff0-a634-b02500d52991) -->
+<!-- ::: -->
+
+::: slides
+[Lecture slides 07 here](/slides/lec07.html)
+:::
+
+::: source
+Read [Chapter 4](https://nustat.github.io/intro-stat-data-sci/04-tidy.html)
+:::
+
+::: source
+Complete: [Reading Check 07](https://amkuyper.shinyapps.io/07_tidy/)
+:::
+
+::: source
+Complete [Activity 07](https://posit.cloud/spaces/321338/content/5176485)
+:::
+
+::: homework
+Submit [RC_07](https://canvas.northwestern.edu/courses/192604/assignments/1244675)
+
+Submit [Activity 07](https://canvas.northwestern.edu/courses/192604/assignments/1244640)
+
+**Due Wednesday 6/28 11:59pm**
+:::
+:::
+
+::: lab
+Selected Exercise Guide for Activities 5 - 7. Suggest watching AFTER you have attempted the activity.
+
+::: video
+Upcoming
+<!-- Watch [selected solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=661d6219-cdb9-4d90-b1eb-b02900f70e88) -->
+:::
+:::
+
+
+::: slide-deck
+**Practice Exam**
+Upcoming
+:::
+
+::: exam
+Exam 1 will become available Thursday June 29th and due by Sunday July 2nd 11:59pm.
+
+Important:
+
+- Set a timer for 50 minutes (or your ANU time) anything submitted after 50 minutes will receive a 0.
+- Strongly suggest making a one page "cheat-sheet". While this exam is open note/open book - if you do not know the material you will NOT finish within the time limit.
+- Make sure you SUBMIT every Exercise and Question (not just run code you must click Submit). Unsubmitted exercises = 0
+- View your submissions BEFORE locking the exam. Once you lock the exam no changes can be made.
+- Strongly suggest taking the practice exam prior.
+- I do not check my email on the weekend. If you run into technical difficulties over the weekend, I will respond on Monday. Strongly suggest completing the Exam on Friday.
+- Good luck!
+
+Take [Exam 1](https://canvas.northwestern.edu/courses/192604/assignments/1244660)
+:::

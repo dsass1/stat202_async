@@ -1,0 +1,125 @@
+---
+title: "Week 4 (July 08 - July 14)"
+editor_options: 
+  chunk_output_type: console
+execute:
+  
+  message: false
+  warning: false
+  echo: false
+from: markdown+emoji
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+#library(tidyverse)
+library(gt)
+library(gtExtras)
+library(lubridate)
+library(dplyr)
+library(tidyr)
+library(purrr)
+
+agenda <- read.csv("documents/agenda_final.csv") 
+```
+
+::: slide-deck
+**Reminders!**
+
+-   Make sure you review the [Activity Solutions](/course-solutions.html)
+-   I suggest spacing out the lessons so you are working on 1 a day.
+:::
+
+::: slide-deck
+**Lesson 12**
+
+::: video
+Watch [lecture video]()
+:::
+
+::: slides
+[Lecture slides 12 here](/slides/lec12.html)
+:::
+
+::: source
+Read [Chapter 7](https://nustat.github.io/intro-stat-data-sci/07-causality.html)
+:::
+
+::: source
+Complete: [Reading Check 12](https://amkuyper.shinyapps.io/12_randomization/)
+:::
+
+::: source
+Complete [Activity 12](https://posit.cloud/spaces/321338/content/5176490)
+:::
+
+::: homework
+Submit [RC_12](https://canvas.northwestern.edu/courses/192604/assignments/1244680)
+
+Submit [Activity 12](https://canvas.northwestern.edu/courses/192604/assignments/1244645)
+
+**Due Wednesday 7/12 11:59pm CT**
+:::
+:::
+
+::: slide-deck
+**Lesson 13**
+
+::: video
+Watch [lecture video]()
+:::
+
+::: slides
+[Lecture slides 13 here](/slides/lec13.html)
+:::
+
+::: source
+Read [Chapter 8](https://nustat.github.io/intro-stat-data-sci/08-populations.html)
+:::
+
+::: source
+Complete: [Reading Check 13](https://amkuyper.shinyapps.io/13_generalizability/)
+:::
+
+::: source
+Complete [Activity 13](https://posit.cloud/spaces/321338/content/5176491)
+:::
+
+::: homework
+Submit [RC_13](https://canvas.northwestern.edu/courses/192604/assignments/1244681)
+
+Submit [Activity 13](https://canvas.northwestern.edu/courses/192604/assignments/1244646)
+
+**Due Wednesday 7/12 11:59pm CT**
+:::
+:::
+
+
+::: lab
+Selected Exercise Guide for Activities 13 - 14. Suggest watching AFTER you have attempted the activity.
+
+::: video
+Upcoming <!-- Watch [selected solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=661d6219-cdb9-4d90-b1eb-b02900f70e88) -->
+:::
+:::
+
+
+::: slide-deck
+**Practice Exam**
+Upcoming
+:::
+
+::: exam
+Exam 2 will become available Thursday June 29th and due by Sunday July 2nd 11:59pm CT.
+
+Important:
+
+- Set a timer for 50 minutes (or your ANU time) anything submitted after 50 minutes will receive a 0.
+- Strongly suggest making a one page "cheat-sheet". While this exam is open note/open book - if you do not know the material you will NOT finish within the time limit.
+- Make sure you SUBMIT every Exercise and Question (not just run code you must click Submit). Unsubmitted exercises = 0
+- View your submissions BEFORE locking the exam. Once you lock the exam no changes can be made.
+- Strongly suggest taking the practice exam prior.
+- I do not check my email on the weekend. If you run into technical difficulties over the weekend, I will respond on Monday. Strongly suggest completing the Exam on Friday if you are ready for it.
+- Good luck!
+
+Take [Exam 2](https://canvas.northwestern.edu/courses/192604/assignments/1244660)
+:::

@@ -31,6 +31,7 @@ agenda_wk2 <- read.csv("documents/agenda_final.csv") %>%
 - Make sure you review the [Activity Solutions](/course-solutions.html)
 - I suggest spacing out the lessons so you are working on 1 a day.
 - Lessons this week are due by Wednesday because Exam 1 will be available Thursday. 
+- Activity 7 due date has been moved to Friday (still strongly suggest submitting Wednesday so you have ample time to prepare for Exam 1)
 :::
 
 
@@ -63,7 +64,7 @@ Submit [RC_05](https://canvas.northwestern.edu/courses/192604/assignments/124467
 
 Submit [Activity 05](https://canvas.northwestern.edu/courses/192604/assignments/1244638)
 
-**Due Wednesday 6/28 11:59pm**
+**Due Wednesday 6/28 11:59pm CT**
 :::
 :::
 
@@ -95,7 +96,7 @@ Submit [RC_06](https://canvas.northwestern.edu/courses/192604/assignments/124467
 
 Submit [Activity 06](https://canvas.northwestern.edu/courses/192604/assignments/1244639)
 
-**Due Wednesday 6/28 11:59pm**
+**Due Wednesday 6/28 11:59pm CT**
 :::
 :::
 
@@ -129,36 +130,39 @@ Submit [RC_07](https://canvas.northwestern.edu/courses/192604/assignments/124467
 
 Submit [Activity 07](https://canvas.northwestern.edu/courses/192604/assignments/1244640)
 
-**Due Wednesday 6/28 11:59pm**
+**Due Friday 6/30 11:59pm CT**
 :::
 :::
 
 ::: lab
-Selected Exercise Guide for Activities 5 - 7. Suggest watching AFTER you have attempted the activity.
+Selected Exercise Guide for Activities 5 - 6. Suggest watching AFTER you have attempted the activity.
 
 ::: video
-Upcoming
-<!-- Watch [selected solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=661d6219-cdb9-4d90-b1eb-b02900f70e88) -->
+Watch [selected solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d803497f-24cd-4e25-b9a3-b02d01427a5f)
 :::
 :::
 
 
 ::: slide-deck
-**Practice Exam**
-Upcoming
+Take [Practice Exam 1](https://amkuyper.shinyapps.io/sample_exam1/)
+
+- This is the first time this class is being run asynchronous.
+- What that means is if you run into any technical difficulties let me know (they will happen) so that I can fix them!
+
+- The actual exam will be self-timed (set a timer!) anything submitted after 50 minutes will not be graded.
 :::
 
 ::: exam
-Exam 1 will become available Thursday June 29th and due by Sunday July 2nd 11:59pm.
+Exam 1 will become available Thursday June 29th and due by Sunday July 2nd 11:59pm CT.
 
 Important:
 
-- Set a timer for 50 minutes (or your ANU time) anything submitted after 50 minutes will receive a 0.
+- **Set a timer for 50 minutes** (or your ANU time) anything submitted after 50 minutes will receive a 0.
 - Strongly suggest making a one page "cheat-sheet". While this exam is open note/open book - if you do not know the material you will NOT finish within the time limit.
 - Make sure you SUBMIT every Exercise and Question (not just run code you must click Submit). Unsubmitted exercises = 0
 - View your submissions BEFORE locking the exam. Once you lock the exam no changes can be made.
 - Strongly suggest taking the practice exam prior.
-- I do not check my email on the weekend. If you run into technical difficulties over the weekend, I will respond on Monday. Strongly suggest completing the Exam on Friday if you are ready for it.
+- I do not check my email on the weekend. If you run into technical difficulties over the weekend, I will respond on Monday. Strongly suggest completing the Exam on Friday **if you are ready for it**.
 - Good luck!
 
 Take [Exam 1](https://canvas.northwestern.edu/courses/192604/assignments/1244660)

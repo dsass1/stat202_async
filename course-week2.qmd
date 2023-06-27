@@ -125,6 +125,11 @@ Complete: [Reading Check 07](https://amkuyper.shinyapps.io/07_tidy/)
 Complete [Activity 07](https://posit.cloud/spaces/321338/content/5176485)
 :::
 
+
+::: video
+Watch [Activity 07 walkthrough](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a111e72-8ee7-499c-b215-b02e00f8d52b)
+:::
+
 ::: homework
 Submit [RC_07](https://canvas.northwestern.edu/courses/192604/assignments/1244675)
 
@@ -150,6 +155,12 @@ Take [Practice Exam 1](https://amkuyper.shinyapps.io/sample_exam1/)
 - What that means is if you run into any technical difficulties let me know (they will happen) so that I can fix them!
 
 - The actual exam will be self-timed (set a timer!) anything submitted after 50 minutes will not be graded.
+
+::: video
+Watch [Practice Exam Solution](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f46654c8-20fa-49e6-97d5-b02e00f8f9b9)
+:::
+
+
 :::
 
 ::: exam

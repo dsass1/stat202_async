@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.433">
 
-  <title>STAT 202 - Data Visualization  Sections 2.0 - 2.3</title>
+  <title>STAT 202 - Confidence Intervals  Chapter 10  (Part 2)</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -309,6 +309,7 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
+      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -391,800 +392,191 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Data Visualization <br> Sections 2.0 - 2.3</h1>
+  <h1 class="title">Confidence Intervals <br> Chapter 10 <br> (Part 2)</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="todays-goals" class="slide level2" data-background-image="images_horst/ggplot2_exploratory.png" data-background-size="400px" data-background-opacity="50%" data-background-position="80% 50%">
-<h2>Today’s goals</h2>
-<p><br></p>
-<div class="columns">
-<div class="column" style="width:60%;">
-<ol type="1">
-<li>Create a scatterplot</li>
-<li>Properly describe a scatterplot</li>
-<li>Change aesthetics such as color and shape in your plot</li>
-<li>Solve overplotting issues</li>
-</ol>
-</div>
-</div>
-<div class="absolute" style="top: 79%; left: 85%; width: 500px; ">
-<div style="opacity:0.75; font-size: 0.5em">
-<p>Artwork by <span class="citation" data-cites="allison_horst">@allison_horst</span></p>
-</div>
-</div>
-</section>
-<section id="the-grammar-of-graphics" class="slide level2 smaller">
-<h2>The Grammar of Graphics</h2>
-<div class="absolute" style="top: 0%; left: 85%; ">
-<p><img data-src="images_lecture/grammar_graphics.png" id="id" class="class" width="300" height="200"></p>
-</div>
-<div class="columns">
-<div class="column" style="width:85%;">
-<p>Defines a set of rules for constructing statistical graphics by combining different types of <strong>layers</strong>.</p>
-<div class="cell">
-<div class="cell-output-display">
-
-<div id="npxijucldu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#npxijucldu table {
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#npxijucldu thead, #npxijucldu tbody, #npxijucldu tfoot, #npxijucldu tr, #npxijucldu td, #npxijucldu th {
-  border-style: none;
-}
-
-#npxijucldu p {
-  margin: 0;
-  padding: 0;
-}
-
-#npxijucldu .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 24px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#npxijucldu .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#npxijucldu .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#npxijucldu .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#npxijucldu .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#npxijucldu .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#npxijucldu .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#npxijucldu .gt_col_heading {
-  color: #333333;
-  background-color: #D3D3D3;
-  font-size: 100%;
-  font-weight: bold;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#npxijucldu .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #D3D3D3;
-  font-size: 100%;
-  font-weight: bold;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#npxijucldu .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#npxijucldu .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#npxijucldu .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#npxijucldu .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#npxijucldu .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#npxijucldu .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#npxijucldu .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#npxijucldu .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#npxijucldu .gt_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#npxijucldu .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#npxijucldu .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#npxijucldu .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#npxijucldu .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#npxijucldu .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#npxijucldu .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#npxijucldu .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#npxijucldu .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#npxijucldu .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#npxijucldu .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#npxijucldu .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#npxijucldu .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#npxijucldu .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#npxijucldu .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#npxijucldu .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#npxijucldu .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#npxijucldu .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#npxijucldu .gt_left {
-  text-align: left;
-}
-
-#npxijucldu .gt_center {
-  text-align: center;
-}
-
-#npxijucldu .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#npxijucldu .gt_font_normal {
-  font-weight: normal;
-}
-
-#npxijucldu .gt_font_bold {
-  font-weight: bold;
-}
-
-#npxijucldu .gt_font_italic {
-  font-style: italic;
-}
-
-#npxijucldu .gt_super {
-  font-size: 65%;
-}
-
-#npxijucldu .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#npxijucldu .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#npxijucldu .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#npxijucldu .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#npxijucldu .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#npxijucldu .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#npxijucldu .gt_indent_5 {
-  text-indent: 25px;
-}
-</style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Layer">Layer</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Function">Function</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Explanation">Explanation</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><td headers="Layer" class="gt_row gt_left" style="font-weight: bold; padding-left:40px;padding-right:40px;">Data</td>
-<td headers="Function" class="gt_row gt_left" style="font-weight: bold; color: #0000FF; padding-left:40px;padding-right:40px;">ggplot( )</td>
-<td headers="Explanation" class="gt_row gt_left" style="font-weight: bold; padding-left:40px;padding-right:40px;">initialize plot and define dataset first</td></tr>
-    <tr><td headers="Layer" class="gt_row gt_left" style="font-weight: bold; padding-left:40px;padding-right:40px;">Aesthetics</td>
-<td headers="Function" class="gt_row gt_left" style="font-weight: bold; color: #0000FF; padding-left:40px;padding-right:40px;">aes( )</td>
-<td headers="Explanation" class="gt_row gt_left" style="font-weight: bold; padding-left:40px;padding-right:40px;">how variables are mapped</td></tr>
-    <tr><td headers="Layer" class="gt_row gt_left" style="font-weight: bold; padding-left:40px;padding-right:40px;">Geometries</td>
-<td headers="Function" class="gt_row gt_left" style="font-weight: bold; color: #0000FF; padding-left:40px;padding-right:40px;">geom_*( )</td>
-<td headers="Explanation" class="gt_row gt_left" style="font-weight: bold; padding-left:40px;padding-right:40px;">how data is conveyed</td></tr>
-    <tr><td headers="Layer" class="gt_row gt_left" style="color: #666666; padding-left:40px;padding-right:40px;">Facets</td>
-<td headers="Function" class="gt_row gt_left" style="color: #666666; padding-left:40px;padding-right:40px;">facet_*( )</td>
-<td headers="Explanation" class="gt_row gt_left" style="color: #666666; padding-left:40px;padding-right:40px;">separates plots by categories</td></tr>
-    <tr><td headers="Layer" class="gt_row gt_left" style="color: #666666; padding-left:40px;padding-right:40px;">Statistics</td>
-<td headers="Function" class="gt_row gt_left" style="color: #666666; padding-left:40px;padding-right:40px;">stat_*( )</td>
-<td headers="Explanation" class="gt_row gt_left" style="color: #666666; padding-left:40px;padding-right:40px;">statistical transformations</td></tr>
-    <tr><td headers="Layer" class="gt_row gt_left" style="color: #666666; padding-left:40px;padding-right:40px;">Coordinates</td>
-<td headers="Function" class="gt_row gt_left" style="color: #666666; padding-left:40px;padding-right:40px;">coord_*( )</td>
-<td headers="Explanation" class="gt_row gt_left" style="color: #666666; padding-left:40px;padding-right:40px;">customize coord system</td></tr>
-    <tr><td headers="Layer" class="gt_row gt_left" style="color: #666666; padding-left:40px;padding-right:40px;">Theme</td>
-<td headers="Function" class="gt_row gt_left" style="color: #666666; padding-left:40px;padding-right:40px;">theme( )</td>
-<td headers="Explanation" class="gt_row gt_left" style="color: #666666; padding-left:40px;padding-right:40px;">customize non-data components</td></tr>
-  </tbody>
-  
-  
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p><br></p>
-<p>Only the <em>first three</em> layers are essential components that must be defined when building a graphic.</p>
-</section>
-<section id="ng1-scatterplots" class="slide level2">
-<h2>5NG#1: Scatterplots</h2>
-<p><br></p>
-<p>Scatterplots allow you to visualize the <strong>relationship</strong> between 2 <strong>numerical</strong> variables.</p>
-<p><br></p>
-<div class="fragment">
-<p><strong>Scatterplot syntax in R:</strong></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span> my_data, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> var1, <span class="at">y =</span> var2)) <span class="sc">+</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><br></p>
-</div>
-<div class="fragment">
-<p><strong>Scatterplot language:</strong> Construct a scatterplot of <strong>Y by X</strong>.</p>
-</div>
-</section>
-<section id="ng1-scatterplots-1" class="slide level2">
-<h2>5NG#1: Scatterplots</h2>
-<p>When describing scatterplots…</p>
+<section id="why-do-we-need-cis" class="slide level2 smaller">
+<h2>Why do we need CIs?</h2>
+<p>Reporting a range of values via a confidence interval takes into account the uncertainty (sampling variation) associated with the fact that we are observing a single random sample.</p>
 <div>
 <ul>
-<li class="fragment">Look for pattern going from left to right.</li>
-<li class="fragment">Classify association as positive, negative, or no association.</li>
-<li class="fragment">Classify strength of association: strong, moderate, weak.</li>
-<li class="fragment">Describe overall pattern: linear, nonlinear, etc.</li>
-<li class="fragment">Check for overplotting issues.</li>
+<li class="fragment">We know a sampling distribution (thousands of replicate samples) center around the population parameter.</li>
+<li class="fragment">We don’t know the true value of the population parameter.</li>
+<li class="fragment">We know a sampling distribution is normally distributed (CLT)</li>
+<li class="fragment">We have no idea where our single sample falls in the sampling distribution (close to the population parameter or far away).</li>
+</ul>
+</div>
+<div class="fragment">
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="images_lecture/sampling_dist.png"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="images_lecture/sample_CI.png"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="check-your-understanding" class="slide level2">
+<h2>Check your understanding</h2>
+<div class="absolute" style="top: 0%; left: 90%; width: 100px; ">
+<p><img data-src="images_lecture/participate_icon.png"></p>
+</div>
+<p>When we use a <span class="math inline">\(95\%\)</span> critical value, approximately <span class="math inline">\(95\%\)</span> of the confidence intervals contain the true population parameter (e.g.&nbsp;<span class="math inline">\(\mu\)</span>, <span class="math inline">\(\mu_1 - \mu_2\)</span>, <span class="math inline">\(\pi\)</span>, etc).</p>
+<p><br></p>
+<p>Say we generate 20,000 sample means and construct a 95% CI for each sample. How many of the constructed confidence intervals do you expect to contain the true population mean?</p>
+<div class="fragment">
+<ul>
+<li>We EXPECT 20000*.95 = 19,000 of the constructed confidence intervals to contain the true population mean.</li>
 </ul>
 </div>
 </section>
-<section id="the-palmer-penguins-dataset" class="slide level2">
-<h2>The Palmer Penguins Dataset:</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(palmerpenguins)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Rows: 344
-Columns: 8
-$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…
-$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…
-$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …
-$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …
-$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…
-$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …
-$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…
-$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…</code></pre>
-</div>
-</div>
-<div class="absolute" style="top: 60%; left: 10%; ">
-<p><img data-src="images_horst/palmer_penguin_species.png" class="class" width="400" height="300"></p>
-</div>
-<div class="absolute" style="top: 60%; left: 70%; ">
-<p><img data-src="images_horst/palmer_penguin.png" class="class" width="300" height="250"></p>
-</div>
-<div class="absolute" style="top: 85%; left: 85%; width: 500px; ">
-<div style="opacity:0.75; font-size: 0.5em">
-<p>Artwork by <span class="citation" data-cites="allison_horst">@allison_horst</span></p>
+<section id="width-of-an-interval-margin-of-error" class="slide level2 smaller">
+<h2>Width of an Interval (Margin of Error)</h2>
+<p><span class="math display">\[\mathbf{\hbox{Margin of Error}} = \hbox{Critical  Value} * SE(\hbox{Estimator})\]</span></p>
+<div class="fragment">
+<p>There is a trade-off between the width of an interval and the level of confidence (critical value).</p>
+<div>
+<ul>
+<li class="fragment">Using a lower CI (ex: 90% vs 95%) <strong>decreases</strong> the margin of error (narrower interval), but a narrower CI increase the chance that your interval will not capture the true mean.</li>
+<li class="fragment">A 99% CI has a higher chance of capturing the true mean than a 95% CI, but it might be too wide of an interval to be practically useful.</li>
+<li class="fragment">You can also <strong>decrease</strong> the margin of error by <strong>increasing</strong> sample size.</li>
+</ul>
 </div>
 </div>
 </section>
-<section id="example-1-describing-scatterplots" class="slide level2 scrollable">
-<h2>Example 1: Describing scatterplots</h2>
-<div class="absolute" style="top: 10%; left: 90%; width: 100px; ">
-<p><img data-src="images_lecture/participate_icon.png"></p>
-</div>
+<section id="example" class="slide level2 smaller">
+<h2>Example</h2>
+<p>Let’s consider our example from last lecture. You are interested in the average weight of penguins in Antarctica. Let’s say we are able to obtain a random sample of penguins in Antarctica (for example purposes this <strong>random sample</strong> will be the <code>penguins</code> dataset from the <code>palmerpenguins</code> package.)</p>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Plot</a></li><li><a href="#tabset-1-2">Data</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Baseline</a></li><li><a href="#tabset-1-2">Lower CI</a></li><li><a href="#tabset-1-3">Smaller n</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
+<p>Construct a 95% confidence interval for the population mean.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x=</span>flipper_length_mm, <span class="at">y=</span>bill_length_mm)) <span class="sc">+</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="lec02_files/figure-revealjs/unnamed-chunk-4-1.png" width="700" height="450"></p>
-<figcaption>Fig A</figcaption>
-</figure>
-</div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    One Sample t-test
+
+data:  penguins$body_mass_g
+t = 96.893, df = 341, p-value &lt; 2.2e-16
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 4116.458 4287.050
+sample estimates:
+mean of x 
+ 4201.754 </code></pre>
 </div>
 </div>
 </div>
 <div id="tabset-1-2">
+<p>Construct a 90% confidence interval instead.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(penguins<span class="sc">$</span>body_mass_g, <span class="at">conf.level =</span> <span class="fl">0.90</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Rows: 344
-Columns: 8
-$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…
-$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…
-$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …
-$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …
-$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…
-$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …
-$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…
-$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…</code></pre>
+<pre><code>
+    One Sample t-test
+
+data:  penguins$body_mass_g
+t = 96.893, df = 341, p-value &lt; 2.2e-16
+alternative hypothesis: true mean is not equal to 0
+90 percent confidence interval:
+ 4130.231 4273.277
+sample estimates:
+mean of x 
+ 4201.754 </code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-1-3">
+<p>What if we only had a sample size of 50? Construct a 95% confidence interval.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>penguins_sample <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sample_n</span>(<span class="at">size =</span> <span class="dv">50</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(penguins_sample<span class="sc">$</span>body_mass_g, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    One Sample t-test
+
+data:  penguins_sample$body_mass_g
+t = 39.291, df = 48, p-value &lt; 2.2e-16
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ 3952.638 4378.994
+sample estimates:
+mean of x 
+ 4165.816 </code></pre>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="example-2-describing-scatterplots" class="slide level2 scrollable" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Example 2: Describing scatterplots</h2>
-<div class="absolute" style="top: 10%; left: 90%; width: 100px; ">
-<p><img data-src="images_lecture/participate_icon.png"></p>
-</div>
+<section id="extra-practice" class="slide level2 smaller">
+<h2>Extra practice</h2>
+<p>We are interested in making inferences about penguins that live near Palmer Station, Antarctica. We will use the <code>penguins</code> data from the <code>palmerpenguins</code> package as our “random” sample.</p>
+<ol type="1">
+<li><p>Construct a 90% CI for the difference in average flipper length between the Adelie penguins and the Gentoo.</p></li>
+<li><p>Construct a 97% CI for the proportion of penguins that are of the Gentoo species.</p></li>
+<li><p>Construct a 99% CI for the difference in the proportion of female penguins of the Adelie or Chinstrap species that weight over 4000 g and the proportion of male penguins of the Adelie or Chinstrap that weigh over 4000 g</p></li>
+<li><p>Run a simple linear regression to predict <code>body_mass_g</code> based on <code>flipper_length_mm</code>. What is the 97% confidence interval for the slope?</p></li>
+</ol>
+</section>
+<section id="solutions" class="slide level2 smaller">
+<h2>Solutions</h2>
 <div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Plot</a></li><li><a href="#tabset-2-2">Data</a></li></ul>
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">1</a></li><li><a href="#tabset-2-2">2</a></li><li><a href="#tabset-2-3">3</a></li><li><a href="#tabset-2-4">4</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1">
+<p>Construct a 90% CI for the difference in average flipper length between the Adelie penguins and the Gentoo penguins.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x=</span>flipper_length_mm, <span class="at">y=</span>bill_depth_mm)) <span class="sc">+</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="lec02_files/figure-revealjs/unnamed-chunk-6-1.png" width="700" height="450"></p>
-<figcaption>Fig B</figcaption>
-</figure>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>penguins_adelie <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>penguins_gentoo <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Gentoo"</span>)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(<span class="at">x =</span> penguins_adelie<span class="sc">$</span>flipper_length_mm, </span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> penguins_gentoo<span class="sc">$</span>flipper_length_mm,</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>       <span class="at">conf.level =</span> <span class="fl">0.9</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  penguins_adelie$flipper_length_mm and penguins_gentoo$flipper_length_mm
+t = -34.445, df = 261.75, p-value &lt; 2.2e-16
+alternative hypothesis: true difference in means is not equal to 0
+90 percent confidence interval:
+ -28.53846 -25.92824
+sample estimates:
+mean of x mean of y 
+ 189.9536  217.1870 </code></pre>
 </div>
 </div>
-</div>
+<p>We are 90% confident that the difference in average flipper length of the Adelie species and Gentoo species of penguins in Palmer Station, Antarctica is between -28.54 and -25.93 mm.</p>
+<p>(This means we are 90% confident the Adelie species flippers are between 25.93 and 28.54 mm shorter than the Gentoo species for penguins in Palmer Station, Antarctica.)</p>
 </div>
 <div id="tabset-2-2">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Rows: 344
-Columns: 8
-$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…
-$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…
-$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …
-$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …
-$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…
-$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …
-$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…
-$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…</code></pre>
+<p><strong>TO BE UPDATED</strong></p>
+</div>
+<div id="tabset-2-3">
+<p><strong>TO BE UPDATED</strong></p>
+</div>
+<div id="tabset-2-4">
+<p><strong>TO BE UPDATED</strong></p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</section>
-<section id="example-2-describing-scatterplots-1" class="slide level2 scrollable" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Example 2: Describing scatterplots</h2>
-<div class="panel-tabset">
-<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Plot</a></li><li><a href="#tabset-3-2">Data</a></li></ul>
-<div class="tab-content">
-<div id="tabset-3-1">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x=</span>flipper_length_mm, <span class="at">y=</span>bill_depth_mm, <span class="at">color =</span> sex)) <span class="sc">+</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="lec02_files/figure-revealjs/unnamed-chunk-8-1.png" width="700" height="450"></p>
-<figcaption>Fig C</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-3-2">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Rows: 344
-Columns: 8
-$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…
-$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…
-$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …
-$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …
-$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…
-$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …
-$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…
-$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="example-2-describing-scatterplots-2" class="slide level2 scrollable" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Example 2: Describing scatterplots</h2>
-<div class="panel-tabset">
-<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Plot</a></li><li><a href="#tabset-4-2">Data</a></li></ul>
-<div class="tab-content">
-<div id="tabset-4-1">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x=</span>flipper_length_mm, <span class="at">y=</span>bill_depth_mm, <span class="at">color =</span> species)) <span class="sc">+</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="lec02_files/figure-revealjs/unnamed-chunk-10-1.png" width="700" height="450"></p>
-<figcaption>Fig D</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-4-2">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Rows: 344
-Columns: 8
-$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…
-$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…
-$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …
-$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …
-$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…
-$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …
-$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…
-$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="common-coding-errors" class="slide level2 scrollable">
-<h2>Common Coding Errors</h2>
-<ol type="1">
-<li></li>
-</ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x=</span>flipper_length_mm, <span class="at">y=</span>bill_depth_mm)) <span class="sc">+</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="fragment">
-<p><img data-src="images_lecture/error_2a.png" width="900" height="100"></p>
-</div>
-<div class="fragment">
-<p>Plus sign to nowhere. What would happen if you type “1+2+” into a calculator? An error!</p>
-</div>
-<ol start="2" type="1">
-<li></li>
-</ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x=</span>flipper_length_mm, <span class="at">y=</span>bill_depth_mm) <span class="sc">+</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="fragment">
-<p><img data-src="images_lecture/error_2b.png" width="900" height="100"></p>
-</div>
-<div class="fragment">
-<p>All parenthesis must me closed!</p>
-</div>
-<ol start="3" type="1">
-<li></li>
-</ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Penguins, <span class="fu">aes</span>(<span class="at">x=</span>Flipper_length_mm, <span class="at">y=</span>Bill_depth_mm) <span class="sc">+</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="fragment">
-<p><img data-src="images_lecture/error_2c.png" width="900" height="100"></p>
-</div>
-<div class="fragment">
-<p>R is case sensitive! Make sure the data and variable names match EXACTLY.</p>
-</div>
-</section>
-<section id="extra-information-and-resources" class="slide level2 scrollable">
-<h2>Extra information and resources</h2>
-<p><br></p>
-<ul>
-<li><p><a href="https://www.rstudio.com/resources/cheatsheets/">ggplot2 cheatsheet link</a></p></li>
-<li><p>Numerical vs Categorical data examples:</p></li>
-</ul>
-<p><img data-src="images_lecture/data_types.png" class="class" width="500" height="300"></p>
 
-<p><img src="nu_logo.png" class="slide-logo"></p>
-<div class="footer footer-default">
+
+<img src="nu_logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
 
 </div>
 </section>

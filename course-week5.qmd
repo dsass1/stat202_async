@@ -28,7 +28,7 @@ agenda <- read.csv("documents/agenda_final.csv")
 -   Complete Week 4 first!
 -   Make sure you review the [Activity Solutions](/course-solutions.html)
 -   I suggest spacing out the lessons so you are working on 1 a day.
-- Chapters 9 - 12 are hard! Make sure you attend office hours if you are struggling.
+- Chapters 9 - 12 are hard! Make sure you attend office hours if you are struggling. Do NOT procrastinate! If you wait until the last day to start these you probably will not finish.
 :::
 
 ::: tutorial
@@ -81,7 +81,7 @@ Watch [lecture video]()
 :::
 
 ::: source
-Read [Sections 5.2 - 5.4](https://nustat.github.io/intro-stat-data-sci/05-regression.html)
+Read [Sections 9.4 - 9.7](https://nustat.github.io/intro-stat-data-sci/09-sampling-distributions.html)
 :::
 
 ::: source
@@ -113,60 +113,74 @@ Watch [lecture video part 1]()
 :::
 
 ::: source
-Read [Sections 6.0 - 6.1](https://nustat.github.io/intro-stat-data-sci/06-multiple-regression.html)
+Read [Chapter 10](https://nustat.github.io/intro-stat-data-sci/10-confidence-intervals.html)
 :::
 
 ::: source
-Complete: [Reading Check 10](https://amkuyper.shinyapps.io/10_regression3/)
+Complete: [Reading Check 17](https://amkuyper.shinyapps.io/17_CI/)
 :::
 
 ::: source
-Complete [Activity 10](https://posit.cloud/spaces/321338/content/5176488)
+Start [Activity 17](https://posit.cloud/spaces/321338/content/5176495)
+
+- Suggest completing Exercise 1
+:::
+
+::: video
+Watch [lecture video part 2]()
+:::
+
+::: slides
+[Lecture slides 18 here](/slides/lec18.html)
+:::
+
+::: source
+Finish [Activity 17](https://posit.cloud/spaces/321338/content/5176495)
 :::
 
 ::: homework
-Submit [RC_10](https://canvas.northwestern.edu/courses/192604/assignments/1244678)
+Submit [RC_17](https://canvas.northwestern.edu/courses/192604/assignments/1244685)
 
-Submit [Activity 10](https://canvas.northwestern.edu/courses/192604/assignments/1244643)
+Submit [Activity 17](https://canvas.northwestern.edu/courses/192604/assignments/1244650)
 
 **Due Friday 7/21 11:59pm CT**
 :::
 :::
 
 ::: slide-deck
-**Lesson 11**
+**Lesson 18**
 
 ::: video
-Watch [lecture video](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d758dfc0-f25d-4ac2-bb87-b03100d16933)
+Watch [lecture video]()
 :::
 
 ::: slides
-[Lecture slides 11 here](/slides/lec11.html)
+[Lecture slides 19 here](/slides/lec19.html)
 :::
 
 ::: source
-Read [Sections 6.2 - 6.4](https://nustat.github.io/intro-stat-data-sci/06-multiple-regression.html)
+Read [Chapter 11](https://nustat.github.io/intro-stat-data-sci/11-p-values.html)
 :::
 
 ::: source
-Complete: [Reading Check 11](https://amkuyper.shinyapps.io/11_regression4/)
+Complete: [Reading Check 18](https://amkuyper.shinyapps.io/18_pvalues/)
 :::
 
 ::: source
-Complete [Activity 11](https://posit.cloud/spaces/321338/content/5176489)
+Complete [Activity 18](https://posit.cloud/spaces/321338/content/5176496)
 :::
 
 ::: homework
-Submit [RC_11](https://canvas.northwestern.edu/courses/192604/assignments/1244679)
+Submit [RC_18](https://canvas.northwestern.edu/courses/192604/assignments/1244686)
 
-Submit [Activity 11](https://canvas.northwestern.edu/courses/192604/assignments/1244644)
+Submit [Activity 18](https://canvas.northwestern.edu/courses/192604/assignments/1244651)
 
-**Due Friday 7/07 11:59pm CT**
+**Due Friday 7/21 11:59pm CT**
 :::
 :::
 
 ::: lab
-Selected Exercise Guide for Activities 8 - 11. Suggest watching AFTER you have attempted the activity.
+Selected Exercise Guide for Activities 15 - 18. Suggest watching AFTER you have attempted the activity.
 
 ::: video
 Upcoming <!-- Watch [selected solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=661d6219-cdb9-4d90-b1eb-b02900f70e88) -->

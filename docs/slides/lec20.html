@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>STAT 202 - Week 5 (July 15 - July 21)</title>
+<title>STAT 202 - Hypothesis Testing  Chapter 12  (Part 1)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,21 +23,21 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -59,6 +59,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script src="https://kit.fontawesome.com/78ddb093ea.js" crossorigin="anonymous"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -68,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Week 5 (July 15 - July 21)</h1>
+      <h1 class="quarto-secondary-nav-title">Hypothesis Testing <br> Chapter 12 <br> (Part 1)</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -80,8 +81,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./" class="sidebar-logo-link">
-      <img src="./images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../" class="sidebar-logo-link">
+      <img src="../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="https://campuswire.com/c/G84F5E750" title="Campuswire" class="sidebar-tool px-1"><i class="bi bi-person-fill"></i></a>
@@ -97,22 +98,22 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">About</a>
+  <a href="../index.html" class="sidebar-item-text sidebar-link">About</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-week3.html" class="sidebar-item-text sidebar-link">Week 3 (July 01 - 07)</a>
+  <a href="../course-week3.html" class="sidebar-item-text sidebar-link">Week 3 (July 01 - 07)</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-week2.html" class="sidebar-item-text sidebar-link">Week 2 (June 24 - 30)</a>
+  <a href="../course-week2.html" class="sidebar-item-text sidebar-link">Week 2 (June 24 - 30)</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-week1.html" class="sidebar-item-text sidebar-link">Week 1 (June 20 - 23)</a>
+  <a href="../course-week1.html" class="sidebar-item-text sidebar-link">Week 1 (June 20 - 23)</a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -125,17 +126,17 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-syllabus.html" class="sidebar-item-text sidebar-link">Syllabus</a>
+  <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">Syllabus</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-solutions.html" class="sidebar-item-text sidebar-link">Activity solutions</a>
+  <a href="../course-solutions.html" class="sidebar-item-text sidebar-link">Activity solutions</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-ec.html" class="sidebar-item-text sidebar-link">Extra Credit</a>
+  <a href="../course-ec.html" class="sidebar-item-text sidebar-link">Extra Credit</a>
   </div>
 </li>
       </ul>
@@ -145,14 +146,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#example" id="toc-example" class="nav-link active" data-scroll-target="#example">Example</a></li>
+  <li><a href="#possible-scenarios-results" id="toc-possible-scenarios-results" class="nav-link" data-scroll-target="#possible-scenarios-results">4 Possible Scenarios Results</a></li>
+  <li><a href="#error" id="toc-error" class="nav-link" data-scroll-target="#error">Error</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dsass1/stat202_async/edit/main/slides/lec20.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/dsass1/stat202_async/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Week 5 (July 15 - July 21)</h1>
+<h1 class="title d-none d-lg-block">Hypothesis Testing <br> Chapter 12 <br> (Part 1)</h1>
 </div>
 
 
@@ -166,134 +175,129 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="cell">
-
-</div>
-<div class="slide-deck">
-<p><strong>Reminders!</strong></p>
+<section id="example" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="example">Example</h2>
+<p>Suppose Jill Thrillseeker is going sky diving. Jill will be inspecting the parachute before using it. No matter the inspection, we can never be 100% sure the parachute will work until we pull the rip cord to deploy it.</p>
+<div class="incremental">
 <ul>
-<li>Complete Week 4 first!</li>
-<li>Make sure you review the <a href="./course-solutions.html">Activity Solutions</a></li>
-<li>I suggest spacing out the lessons so you are working on 1 a day.</li>
-<li>Chapters 9 - 12 are hard! Make sure you attend office hours if you are struggling. Do NOT procrastinate! If you wait until the last day to start these you probably will not finish.</li>
+<li><p><span class="math inline">\(H_0:\)</span> the parachute is packed correctly (meaning it will work)</p></li>
+<li><p><span class="math inline">\(H_A:\)</span> the parachute is not packed correctly (meaning it will not work)</p></li>
 </ul>
 </div>
-<div class="tutorial">
-<p>Complete <a href="https://canvas.northwestern.edu/courses/192604/quizzes/209278">Course Survey 2</a></p>
-<p>(Don’t skip this it’s anonymous and worth points!)</p>
+<div class="incremental">
+<p>Describe the 4 possible scenarios and their consequences.</p>
 </div>
-<div class="slide-deck">
-<p><strong>Lesson 15</strong></p>
-<div class="video">
-<p>Watch <a href="">lecture video</a></p>
+<div class="incremental">
+<!-- ## 4 Possible Scenarios -->
+<table class="table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 32%">
+<col style="width: 24%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Alternative <span class="math inline">\(H_A\)</span> is true</th>
+<th>Null <span class="math inline">\(H_0\)</span> is true</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reject the null hypothesis</td>
+<td>Scenario 1</td>
+<td>Scenario 2</td>
+</tr>
+<tr class="even">
+<td>Do not reject the null hypothesis</td>
+<td>Scenario 3</td>
+<td>Scenario 4</td>
+</tr>
+</tbody>
+</table>
+<!-- ## Scenario 1: Correct Decision -->
+<!-- -   True Positive -->
+<!-- -   **Decision**: Jill decides the parachute is NOT packed correctly -->
+<!-- -   **Truth**: parachute was NOT packed correctly -->
+<!-- -   **Result**: The parachute was NOT packed correctly and Jill decides to repack it. Jill's life is saved! -->
+<!-- ## Scenario 2: Type I Error -->
+<!-- -   False Positive -->
+<!-- -   **Decision**: Jill decides the parachute is NOT packed correctly -->
+<!-- -   **Truth**: parachute was packed correctly all along -->
+<!-- -   **Result**: Jill wasted time and energy repacking the parachute -->
+<!-- ## Scenario 3: Type II Error -->
+<!-- -   False Negative -->
+<!-- -   **Decision**: Jill decides the parachute is packed correctly -->
+<!-- -   **Truth**: parachute was NOT packed correctly -->
+<!-- -   **Result**: Jill jumps out with a bad parachute and probably dies -->
+<!-- ## Scenario 4: Correct Decision -->
+<!-- -   True Negative -->
+<!-- -   **Decision**: Jill decides the parachute is packed correctly -->
+<!-- -   **Truth**: parachute was packed correctly -->
+<!-- -   **Result**: The parachute is packed correctly and opens, so Jill floats safely to the ground -->
 </div>
-<div class="slides">
-<p><a href="./slides/lec15.html">Lecture slides 15 here</a></p>
-</div>
-<div class="source">
-<p>Read <a href="https://nustat.github.io/intro-stat-data-sci/09-sampling-distributions.html">Sections 9.2 - 9.3</a></p>
-</div>
-<div class="source">
-<p>Complete: <a href="https://amkuyper.shinyapps.io/15_sampling2/">Reading Check 15</a></p>
-</div>
-<div class="source">
-<p>Complete <a href="https://posit.cloud/spaces/321338/content/5176493">Activity 15</a></p>
-</div>
-<div class="homework">
-<p>Submit <a href="https://canvas.northwestern.edu/courses/192604/assignments/1244683">RC_15</a></p>
-<p>Submit <a href="https://canvas.northwestern.edu/courses/192604/assignments/1244648">Activity 15</a></p>
-<p><strong>Due Friday 7/21 11:59pm CT</strong></p>
-</div>
-</div>
-<div class="slide-deck">
-<p><strong>Lesson 16</strong></p>
-<div class="video">
-<p>Watch <a href="">lecture video</a></p>
-</div>
-<div class="slides">
-<p><a href="./slides/lec16.html">Lecture slides 16 here</a></p>
-</div>
-<div class="source">
-<p>Read <a href="https://nustat.github.io/intro-stat-data-sci/09-sampling-distributions.html">Sections 9.4 - 9.7</a></p>
-</div>
-<div class="source">
-<p>Complete: <a href="https://amkuyper.shinyapps.io/16_sampling3/">Reading Check 16</a></p>
-</div>
-<div class="source">
-<p>Complete <a href="https://posit.cloud/spaces/321338/content/5176494">Activity 16</a></p>
-</div>
-<div class="homework">
-<p>Submit <a href="https://canvas.northwestern.edu/courses/192604/assignments/1244684">RC_16</a></p>
-<p>Submit <a href="https://canvas.northwestern.edu/courses/192604/assignments/1244649">Activity 16</a></p>
-<p><strong>Due Friday 7/21 11:59pm CT</strong></p>
-</div>
-</div>
-<div class="slide-deck">
-<p><strong>Lesson 17</strong></p>
-<div class="video">
-<p>Watch <a href="">lecture video part 1</a></p>
-</div>
-<div class="slides">
-<p><a href="./slides/lec17.html">Lecture slides 17 here</a></p>
-</div>
-<div class="source">
-<p>Read <a href="https://nustat.github.io/intro-stat-data-sci/10-confidence-intervals.html">Chapter 10</a></p>
-</div>
-<div class="source">
-<p>Complete: <a href="https://amkuyper.shinyapps.io/17_CI/">Reading Check 17</a></p>
-</div>
-<div class="source">
-<p>Start <a href="https://posit.cloud/spaces/321338/content/5176495">Activity 17</a></p>
+</section>
+<section id="possible-scenarios-results" class="level2">
+<h2 class="anchored" data-anchor-id="possible-scenarios-results">4 Possible Scenarios Results</h2>
+<table class="table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 32%">
+<col style="width: 24%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Alternative <span class="math inline">\(H_A\)</span> is true</th>
+<th>Null <span class="math inline">\(H_0\)</span> is true</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reject the null hypothesis</td>
+<td>Correct Decision</td>
+<td><strong>Type I Error</strong></td>
+</tr>
+<tr class="even">
+<td>Do not reject the null hypothesis</td>
+<td><strong>Type II Error</strong></td>
+<td>Correct Decision</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="error" class="level2">
+<h2 class="anchored" data-anchor-id="error">Error</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Type 1</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Type II error</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Power</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <ul>
-<li>Suggest completing Exercise 1</li>
+<li>Reject the null hypothesis when it is true</li>
+<li>False Positive</li>
+<li>Significance level</li>
+<li><span class="math inline">\(\alpha\)</span> = probability of a Type I error</li>
 </ul>
 </div>
-<div class="video">
-<p>Watch <a href="">lecture video part 2</a></p>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<ul>
+<li>Fail to reject the null hypothesis when it is false</li>
+<li>False Negative</li>
+<li><span class="math inline">\(\beta\)</span> = probability of a Type II error</li>
+</ul>
 </div>
-<div class="slides">
-<p><a href="./slides/lec18.html">Lecture slides 18 here</a></p>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<ul>
+<li>The probability of correctly rejecting the null hypothesis when it is false</li>
+<li>Correct rejection decision</li>
+<li><span class="math inline">\(\textbf{Power} = 1 - \beta\)</span></li>
+</ul>
 </div>
-<div class="source">
-<p>Finish <a href="https://posit.cloud/spaces/321338/content/5176495">Activity 17</a></p>
-</div>
-<div class="homework">
-<p>Submit <a href="https://canvas.northwestern.edu/courses/192604/assignments/1244685">RC_17</a></p>
-<p>Submit <a href="https://canvas.northwestern.edu/courses/192604/assignments/1244650">Activity 17</a></p>
-<p><strong>Due Friday 7/21 11:59pm CT</strong></p>
-</div>
-</div>
-<div class="slide-deck">
-<p><strong>Lesson 18</strong></p>
-<div class="video">
-<p>Watch <a href="">lecture video</a></p>
-</div>
-<div class="slides">
-<p><a href="./slides/lec19.html">Lecture slides 19 here</a></p>
-</div>
-<div class="source">
-<p>Read <a href="https://nustat.github.io/intro-stat-data-sci/11-p-values.html">Chapter 11</a></p>
-</div>
-<div class="source">
-<p>Complete: <a href="https://amkuyper.shinyapps.io/18_pvalues/">Reading Check 18</a></p>
-</div>
-<div class="source">
-<p>Complete <a href="https://posit.cloud/spaces/321338/content/5176496">Activity 18</a></p>
-</div>
-<div class="homework">
-<p>Submit <a href="https://canvas.northwestern.edu/courses/192604/assignments/1244686">RC_18</a></p>
-<p>Submit <a href="https://canvas.northwestern.edu/courses/192604/assignments/1244651">Activity 18</a></p>
-<p><strong>Due Friday 7/21 11:59pm CT</strong></p>
-</div>
-</div>
-<div class="lab">
-<p>Selected Exercise Guide for Activities 15 - 18. Suggest watching AFTER you have attempted the activity.</p>
-<div class="video">
-<p>Upcoming <!-- Watch [selected solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=661d6219-cdb9-4d90-b1eb-b02900f70e88) --></p>
 </div>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

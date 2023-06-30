@@ -29,6 +29,16 @@ agenda <- read.csv("documents/agenda_final.csv")
 -   I suggest spacing out the lessons so you are working on 1 a day.
 :::
 
+
+::: tutorial
+
+Complete [Final Project Survey](https://canvas.northwestern.edu/courses/192604/quizzes/212291)
+
+- You can work on the final project either on your own or in groups of 2-4.
+- If you want to work in a group but do not know anyone in the class I will find you other students who are also looking for a group!
+- Don't skip this it is worth points.
+:::
+
 ::: slide-deck
 **Lesson 12**
 
@@ -50,6 +60,11 @@ Complete: [Reading Check 12](https://amkuyper.shinyapps.io/12_randomization/)
 
 ::: source
 Complete [Activity 12](https://posit.cloud/spaces/321338/content/5176490)
+
+- Complete in "Visual Mode" (easier to do tables)
+ ![](images/visual_mode.png)
+- To open the app; click "app.R" and "Run App"
+ ![](images/run_app.png)
 :::
 
 ::: homework
@@ -57,7 +72,7 @@ Submit [RC_12](https://canvas.northwestern.edu/courses/192604/assignments/124468
 
 Submit [Activity 12](https://canvas.northwestern.edu/courses/192604/assignments/1244645)
 
-**Due Wednesday 7/12 11:59pm CT**
+**Due Friday 7/14 11:59pm CT**
 :::
 :::
 
@@ -82,6 +97,9 @@ Complete: [Reading Check 13](https://amkuyper.shinyapps.io/13_generalizability/)
 
 ::: source
 Complete [Activity 13](https://posit.cloud/spaces/321338/content/5176491)
+
+- Complete in "Visual Mode" (easier to do tables)
+- To open the app; click "app.R" and "Run App"
 :::
 
 ::: homework
@@ -89,37 +107,78 @@ Submit [RC_13](https://canvas.northwestern.edu/courses/192604/assignments/124468
 
 Submit [Activity 13](https://canvas.northwestern.edu/courses/192604/assignments/1244646)
 
-**Due Wednesday 7/12 11:59pm CT**
+**Due Friday 7/14 11:59pm CT**
 :::
 :::
 
+
+::: slide-deck
+**Lesson 14**
+
+::: video
+Watch [lecture video]()
+:::
+
+::: slides
+[Lecture slides 14 here](/slides/lec14.html)
+:::
+
+::: source
+Read [Sections 9.0 - 9.1](https://nustat.github.io/intro-stat-data-sci/09-sampling-distributions.html)
+:::
+
+::: source
+Complete: [Reading Check 14](https://amkuyper.shinyapps.io/13_generalizability/)
+:::
+
+::: source
+Complete [Activity 14](https://posit.cloud/spaces/321338/content/5176492)
+
+- this activity is hard!
+- get out a piece of paper and draw a picture!
+:::
+
+::: homework
+Submit [RC_14](https://canvas.northwestern.edu/courses/192604/assignments/1244681)
+
+Submit [Activity 14](https://canvas.northwestern.edu/courses/192604/assignments/1244646)
+
+**Due Friday 7/14 11:59pm CT**
+:::
+:::
 
 ::: lab
-Selected Exercise Guide for Activities 13 - 14. Suggest watching AFTER you have attempted the activity.
+Selected Exercise Guide for Activities 12 - 14. Suggest watching AFTER you have attempted the activity.
 
 ::: video
 Upcoming <!-- Watch [selected solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=661d6219-cdb9-4d90-b1eb-b02900f70e88) -->
 :::
 :::
 
-
 ::: slide-deck
-**Practice Exam**
-Upcoming
+**Practice Exam** Upcoming
 :::
 
 ::: exam
-Exam 2 will become available Thursday June 29th and due by Sunday July 2nd 11:59pm CT.
+Exam 2 is due by Sunday July 16th 11:59pm CT.
 
 Important:
 
-- Set a timer for 50 minutes (or your ANU time) anything submitted after 50 minutes will receive a 0.
-- Strongly suggest making a one page "cheat-sheet". While this exam is open note/open book - if you do not know the material you will NOT finish within the time limit.
-- Make sure you SUBMIT every Exercise and Question (not just run code you must click Submit). Unsubmitted exercises = 0
-- View your submissions BEFORE locking the exam. Once you lock the exam no changes can be made.
-- Strongly suggest taking the practice exam prior.
-- I do not check my email on the weekend. If you run into technical difficulties over the weekend, I will respond on Monday. Strongly suggest completing the Exam on Friday if you are ready for it.
-- Good luck!
+-   Set a timer for 50 minutes (or your ANU time) anything submitted after 50 minutes will receive a 0.
+-   Strongly suggest making a one page "cheat-sheet". While this exam is open note/open book - if you do not know the material you will NOT finish within the time limit.
+-   Make sure you SUBMIT every Exercise and Question (not just run code you must click Submit). Unsubmitted exercises = 0
+-   View your submissions BEFORE locking the exam. Once you lock the exam no changes can be made.
+-   Strongly suggest taking the practice exam prior.
+-   I do not check my email on the weekend. If you run into technical difficulties over the weekend, I will respond on Monday. Strongly suggest completing the Exam on Friday if you are ready for it.
+-   Good luck!
 
-Take [Exam 2](https://canvas.northwestern.edu/courses/192604/assignments/1244660)
+
+::: video
+[Exam directions](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a3d44862-c110-432a-b538-b02f00e70d18) - same as Exam 1 but might be a good refresher.
+:::
+
+Take [Exam 2](https://posit.cloud/spaces/321338/content/5176506)
+
+
+Submit [Exam 2](https://canvas.northwestern.edu/courses/192604/assignments/1244662)
 :::

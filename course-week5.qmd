@@ -1,0 +1,174 @@
+---
+title: "Week 5 (July 15 - July 21)"
+editor_options: 
+  chunk_output_type: console
+execute:
+  
+  message: false
+  warning: false
+  echo: false
+from: markdown+emoji
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+#library(tidyverse)
+library(gt)
+library(gtExtras)
+library(lubridate)
+library(dplyr)
+library(tidyr)
+library(purrr)
+
+agenda <- read.csv("documents/agenda_final.csv") 
+```
+
+::: slide-deck
+**Reminders!**
+
+-   Complete Week 4 first!
+-   Make sure you review the [Activity Solutions](/course-solutions.html)
+-   I suggest spacing out the lessons so you are working on 1 a day.
+- Chapters 9 - 12 are hard! Make sure you attend office hours if you are struggling.
+:::
+
+::: tutorial
+Complete [Course Survey 2](https://canvas.northwestern.edu/courses/192604/quizzes/209278)
+
+(Don't skip this it's anonymous and worth points!)
+:::
+
+::: slide-deck
+**Lesson 15**
+
+::: video
+Watch [lecture video]()
+:::
+
+::: slides
+[Lecture slides 15 here](/slides/lec15.html)
+:::
+
+::: source
+Read [Sections 9.2 - 9.3](https://nustat.github.io/intro-stat-data-sci/09-sampling-distributions.html)
+:::
+
+::: source
+Complete: [Reading Check 15](https://amkuyper.shinyapps.io/15_sampling2/)
+:::
+
+::: source
+Complete [Activity 15](https://posit.cloud/spaces/321338/content/5176493)
+:::
+
+::: homework
+Submit [RC_15](https://canvas.northwestern.edu/courses/192604/assignments/1244683)
+
+Submit [Activity 15](https://canvas.northwestern.edu/courses/192604/assignments/1244648)
+
+**Due Friday 7/21 11:59pm CT**
+:::
+:::
+
+::: slide-deck
+**Lesson 16**
+
+::: video
+Watch [lecture video]()
+:::
+
+::: slides
+[Lecture slides 16 here](/slides/lec16.html)
+:::
+
+::: source
+Read [Sections 5.2 - 5.4](https://nustat.github.io/intro-stat-data-sci/05-regression.html)
+:::
+
+::: source
+Complete: [Reading Check 16](https://amkuyper.shinyapps.io/16_sampling3/)
+:::
+
+::: source
+Complete [Activity 16](https://posit.cloud/spaces/321338/content/5176494)
+:::
+
+::: homework
+Submit [RC_16](https://canvas.northwestern.edu/courses/192604/assignments/1244684)
+
+Submit [Activity 16](https://canvas.northwestern.edu/courses/192604/assignments/1244649)
+
+**Due Friday 7/21 11:59pm CT**
+:::
+:::
+
+::: slide-deck
+**Lesson 17**
+
+::: video
+Watch [lecture video part 1]()
+:::
+
+::: slides
+[Lecture slides 17 here](/slides/lec17.html)
+:::
+
+::: source
+Read [Sections 6.0 - 6.1](https://nustat.github.io/intro-stat-data-sci/06-multiple-regression.html)
+:::
+
+::: source
+Complete: [Reading Check 10](https://amkuyper.shinyapps.io/10_regression3/)
+:::
+
+::: source
+Complete [Activity 10](https://posit.cloud/spaces/321338/content/5176488)
+:::
+
+::: homework
+Submit [RC_10](https://canvas.northwestern.edu/courses/192604/assignments/1244678)
+
+Submit [Activity 10](https://canvas.northwestern.edu/courses/192604/assignments/1244643)
+
+**Due Friday 7/21 11:59pm CT**
+:::
+:::
+
+::: slide-deck
+**Lesson 11**
+
+::: video
+Watch [lecture video](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d758dfc0-f25d-4ac2-bb87-b03100d16933)
+:::
+
+::: slides
+[Lecture slides 11 here](/slides/lec11.html)
+:::
+
+::: source
+Read [Sections 6.2 - 6.4](https://nustat.github.io/intro-stat-data-sci/06-multiple-regression.html)
+:::
+
+::: source
+Complete: [Reading Check 11](https://amkuyper.shinyapps.io/11_regression4/)
+:::
+
+::: source
+Complete [Activity 11](https://posit.cloud/spaces/321338/content/5176489)
+:::
+
+::: homework
+Submit [RC_11](https://canvas.northwestern.edu/courses/192604/assignments/1244679)
+
+Submit [Activity 11](https://canvas.northwestern.edu/courses/192604/assignments/1244644)
+
+**Due Friday 7/07 11:59pm CT**
+:::
+:::
+
+::: lab
+Selected Exercise Guide for Activities 8 - 11. Suggest watching AFTER you have attempted the activity.
+
+::: video
+Upcoming <!-- Watch [selected solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=661d6219-cdb9-4d90-b1eb-b02900f70e88) -->
+:::
+:::

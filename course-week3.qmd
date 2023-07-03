@@ -167,9 +167,16 @@ Submit [Activity 11](https://canvas.northwestern.edu/courses/192604/assignments/
 :::
 
 ::: lab
-Selected Exercise Guide for Activities 8 - 11. Suggest watching AFTER you have attempted the activity.
+Selected Exercise Guide for Activities 8 - 11. Do not watch until AFTER you have attempted the activity.
 
 ::: video
-Upcoming <!-- Watch [selected solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=661d6219-cdb9-4d90-b1eb-b02900f70e88) -->
+Watch [Activity 8 solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=29ca7d52-42a6-4ab8-bfa4-b034012a783b)
+:::
+
+::: video
+Watch [Activity 9 solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ea29da12-12f4-4b18-ba3b-b034012a7814)
+:::
+::: video
+Activity 10 and 11 Upcoming
 :::
 :::

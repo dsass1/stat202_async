@@ -1,5 +1,5 @@
 ---
-title: "Week 4 (July 08 - July 14)"
+title: "Week 6 (July 22 - July 30)"
 editor_options: 
   chunk_output_type: console
 execute:
@@ -27,26 +27,19 @@ agenda <- read.csv("documents/agenda_final.csv")
 
 -   Make sure you review the [Activity Solutions](/course-solutions.html)
 -   I suggest spacing out the lessons so you are working on 1 a day.
--   Exam 2 is due by Sunday July 16th 11:59pm CT; take whenever you are ready.
-:::
-
-::: alert
-Complete [Final Project Survey](https://canvas.northwestern.edu/courses/192604/quizzes/212291)
-
--   You can work on the final project either on your own or in groups of 2-4.
--   If you want to work in a group but do not know anyone in the class I will find you other students who are also looking for a group!
--   Don't skip this it is worth points.
+-   Exam 3 is due by Friday July 28th 11:59pm CT; take whenever you are ready.
+-   Final project is due by Sunday July 30th 11:59pm CT
 :::
 
 ::: slide-deck
-**Lesson 12**
+**Lesson 19**
 
 ::: video
-Watch [lecture video](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0966d979-6be8-423e-9c1a-b0360124f46d)
+Watch [lecture video]()
 :::
 
 ::: slides
-[Lecture slides 12 here](/slides/lec12.html)
+[Lecture slides 20 here](/slides/lec12.html)
 :::
 
 ::: source
@@ -74,7 +67,7 @@ Submit [Activity 12](https://canvas.northwestern.edu/courses/192604/assignments/
 :::
 
 ::: slide-deck
-**Lesson 13**
+**Lesson 20**
 
 ::: video
 Watch [lecture video](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=99340af7-3e58-4a6f-9f89-b0360124f423)
@@ -108,44 +101,8 @@ Submit [Activity 13](https://canvas.northwestern.edu/courses/192604/assignments/
 :::
 :::
 
-::: slide-deck
-**Lesson 14**
-
-::: video
-Watch [lecture video](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6283506d-7fb2-4243-a180-b0360124f3ef)
-:::
-
-::: slides
-[Lecture slides 14 here](/slides/lec14.html)
-:::
-
-::: source
-Read [Sections 9.0 - 9.1](https://nustat.github.io/intro-stat-data-sci/09-sampling-distributions.html)
-:::
-
-::: source
-Complete: [Reading Check 14](https://amkuyper.shinyapps.io/14_sampling1/)
-:::
-
-::: source
-Complete [Activity 14](https://posit.cloud/spaces/321338/content/5176492)
-
--   this activity is hard!
--   get out a piece of paper and draw a picture!
--   Can check your answers [here](https://canvas.northwestern.edu/courses/192604/quizzes/209274)
-:::
-
-::: homework
-Submit [RC_14](https://canvas.northwestern.edu/courses/192604/assignments/1244682)
-
-Submit [Activity 14](https://canvas.northwestern.edu/courses/192604/assignments/1244647)
-
-**Due Friday 7/14 11:59pm CT**
-:::
-:::
-
 ::: lab
-Selected Exercise Guide for Activities 12 - 14. Suggest watching AFTER you have attempted the activity.
+Selected Exercise Guide for Activities 19 - 20. Suggest watching AFTER you have attempted the activity.
 
 ::: video
 Upcoming <!-- Watch [selected solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=661d6219-cdb9-4d90-b1eb-b02900f70e88) -->
@@ -153,32 +110,22 @@ Upcoming <!-- Watch [selected solution guide](https://northwestern.hosted.panopt
 :::
 
 
-::: alert
-Extra Credit opportunity: See the 
-[Extra Credit](/course-ec.html) tab for Extra Credit Opportunity 2 - Stats and Data Science Articles
-
-Submit [EC article](https://canvas.northwestern.edu/courses/192604/assignments/1244656)
-
-:::
-
 ::: slide-deck
-Take [Practice Exam 2](https://amkuyper.shinyapps.io/sample_exam2_v2/)
+Take [Practice Exam 3](https://amkuyper.shinyapps.io/sample_exam3_v2/)
 
-
-- The actual exam will be self-timed (set a timer!) anything submitted after 60 minutes will not be graded.
+-   The actual exam will be self-timed (set a timer!) anything submitted after 60 minutes will not be graded.
 
 ::: video
-Watch [Practice Exam 2 Solution](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d19f1040-af49-4c20-91c0-b03700f100e0)
+Upcoming: Watch [Practice Exam 3 Solution]()
 :::
-
 :::
 
 ::: exam
-Exam 2 is due by Sunday July 16th 11:59pm CT.
+Exam 3 is due by Friday July 28th 11:59pm CT.
 
 Important:
 
--   Set a timer for 60 minutes (or your ANU time). 
+-   Set a timer for 60 minutes (or your ANU time).
 -   Don't spend too long on one question! Pace yourself. Students take these exams during the school year in 50 minutes - I am giving you 10 extra minutes.
 -   Strongly suggest making a one page "cheat-sheet". While this exam is open note/open book - **if you do not understand the material you will NOT finish within the time limit - study**!.
 -   Make sure you SUBMIT every Exercise and Question (not just run code you must click Submit). Unsubmitted exercises = 0
@@ -191,7 +138,7 @@ Important:
 [Exam directions](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a3d44862-c110-432a-b538-b02f00e70d18) - same as Exam 1 but might be a good refresher.
 :::
 
-Take [Exam 2](https://posit.cloud/spaces/321338/content/5176506)
+Take [Exam 3](https://posit.cloud/spaces/321338/content/5176506)
 
-Submit [Exam 2](https://canvas.northwestern.edu/courses/192604/assignments/1244662)
+Submit [Exam 3](https://canvas.northwestern.edu/courses/192604/assignments/1244662)
 :::

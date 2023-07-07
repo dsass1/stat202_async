@@ -23,8 +23,9 @@ agenda <- read.csv("documents/agenda_final.csv")
 ```
 
 ::: slide-deck
-**Reminders!**
+**Announcements!**
 
+-   Exam 1 Solution [here](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8f83639c-2177-4b75-a117-b03800e635a7)
 -   Make sure you review the [Activity Solutions](/course-solutions.html)
 -   I suggest spacing out the lessons so you are working on 1 a day.
 -   Exam 2 is due by Sunday July 16th 11:59pm CT; take whenever you are ready.
@@ -148,8 +149,18 @@ Submit [Activity 14](https://canvas.northwestern.edu/courses/192604/assignments/
 Selected Exercise Guide for Activities 12 - 14. Suggest watching AFTER you have attempted the activity.
 
 ::: video
-Upcoming <!-- Watch [selected solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=661d6219-cdb9-4d90-b1eb-b02900f70e88) -->
+Watch [Activity 12 solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=47ac8b66-7dc8-423b-929e-b03800e6512e)
 :::
+
+::: video
+Watch [Activity 13 solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=169b7cce-a695-4d3c-aee2-b038011320e7)
+:::
+
+
+::: video
+Watch [Activity 14 solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9c7bf280-77a2-42fd-9c46-b038011320c5)
+:::
+
 :::
 
 

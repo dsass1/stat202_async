@@ -190,9 +190,10 @@ Exam 2 is due by Sunday July 16th 11:59pm CT.
 Important:
 
 -   Set a timer for 60 minutes (or your ANU time). 
+-   **If you run out of time still finish and submit the problems you are working on - I will be the judge if it is excessive time.**
 -   Don't spend too long on one question! Pace yourself. Students take these exams during the school year in 50 minutes - I am giving you 10 extra minutes.
 -   Strongly suggest making a one page "cheat-sheet". While this exam is open note/open book - **if you do not understand the material you will NOT finish within the time limit - study**!.
--   Make sure you SUBMIT every Exercise and Question (not just run code you must click Submit). Unsubmitted exercises = 0
+-   Make sure you SUBMIT every Exercise and Question (not just run code you must click Submit)
 -   Check your submissions BEFORE locking the exam. Once you lock the exam no changes can be made.
 -   Strongly suggest taking the practice exam prior.
 -   I do not check my email on the weekend. If you run into technical difficulties over the weekend, I will respond on Monday.

@@ -23,7 +23,7 @@ agenda <- read.csv("documents/agenda_final.csv")
 ```
 
 ::: slide-deck
-**Reminders!**
+**Annoucements!**
 
 -   Make sure you review the [Activity Solutions](/course-solutions.html)
 -   I suggest spacing out the lessons so you are working on 1 a day.
@@ -39,30 +39,27 @@ Watch [lecture video]()
 :::
 
 ::: slides
-[Lecture slides 20 here](/slides/lec12.html)
+[Lecture slides 20 here](/slides/lec20.html)
 :::
 
 ::: source
-Read [Chapter 7](https://nustat.github.io/intro-stat-data-sci/07-causality.html)
+Read [Chapter 12](https://nustat.github.io/intro-stat-data-sci/12-hypothesis-tests.html)
 :::
 
 ::: source
-Complete: [Reading Check 12](https://amkuyper.shinyapps.io/12_randomization/)
+Complete: [Reading Check 19](https://amkuyper.shinyapps.io/19_hypothesis/)
 :::
 
 ::: source
-Complete [Activity 12](https://posit.cloud/spaces/321338/content/5176490)
-
--   Complete in "Visual Mode" (easier to do tables) ![](images/visual_mode.png)
--   To open the app; click "app.R" and "Run App" ![](images/run_app.png)
+Complete [Activity 19](https://posit.cloud/spaces/321338/content/5176497)
 :::
 
 ::: homework
-Submit [RC_12](https://canvas.northwestern.edu/courses/192604/assignments/1244680)
+Submit [RC_19](https://canvas.northwestern.edu/courses/192604/assignments/1244687)
 
-Submit [Activity 12](https://canvas.northwestern.edu/courses/192604/assignments/1244645)
+Submit [Activity 19](https://canvas.northwestern.edu/courses/192604/assignments/1244652)
 
-**Due Friday 7/14 11:59pm CT**
+**Due Wednesday 7/26 11:59pm CT**
 :::
 :::
 
@@ -70,34 +67,22 @@ Submit [Activity 12](https://canvas.northwestern.edu/courses/192604/assignments/
 **Lesson 20**
 
 ::: video
-Watch [lecture video](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=99340af7-3e58-4a6f-9f89-b0360124f423)
+Watch [lecture video]()
 :::
 
 ::: slides
-[Lecture slides 13 here](/slides/lec13.html)
+[Lecture slides 21 here](/slides/lec21.html)
 :::
 
-::: source
-Read [Chapter 8](https://nustat.github.io/intro-stat-data-sci/08-populations.html)
-:::
 
 ::: source
-Complete: [Reading Check 13](https://amkuyper.shinyapps.io/13_generalizability/)
-:::
-
-::: source
-Complete [Activity 13](https://posit.cloud/spaces/321338/content/5176491)
-
--   Complete in "Visual Mode" (easier to do tables)
--   To open the app; click "app.R" and "Run App"
+Complete [Activity 20](https://posit.cloud/spaces/321338/content/5176498)
 :::
 
 ::: homework
-Submit [RC_13](https://canvas.northwestern.edu/courses/192604/assignments/1244681)
+Submit [Activity 20](https://canvas.northwestern.edu/courses/192604/assignments/1244653)
 
-Submit [Activity 13](https://canvas.northwestern.edu/courses/192604/assignments/1244646)
-
-**Due Friday 7/14 11:59pm CT**
+**Due Wednesday 7/26 11:59pm CT**
 :::
 :::
 
@@ -141,4 +126,19 @@ Important:
 Take [Exam 3](https://posit.cloud/spaces/321338/content/5176506)
 
 Submit [Exam 3](https://canvas.northwestern.edu/courses/192604/assignments/1244662)
+:::
+
+
+::: tutorial
+Complete [Course Survey 3](https://canvas.northwestern.edu/courses/192604/quizzes/209278)
+
+(Don't skip this it's anonymous and worth points!)
+:::
+
+::: slide-deck
+Submit [Final Project](https://canvas.northwestern.edu/courses/192604/assignments/1244666)
+
+- If you are in a group only 1 member must submit
+- Look at your document before you submit! You do not want to turn in an html that has not been rendered after completing the qmd. I can't grade sections that I can't see.
+
 :::

@@ -105,7 +105,7 @@ Submit [Activity 16](https://canvas.northwestern.edu/courses/192604/assignments/
 **Lesson 17**
 
 ::: video
-Watch [lecture video part 1]()
+Watch [lecture video part 1](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d17982f4-e45d-4db1-ab72-b03c00d99c19)
 :::
 
 ::: slides
@@ -127,7 +127,7 @@ Start [Activity 17](https://posit.cloud/spaces/321338/content/5176495)
 :::
 
 ::: video
-Watch [lecture video part 2]()
+Watch [lecture video part 2](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9e2170f9-e787-4c6a-a5f3-b03c00d99c43)
 :::
 
 ::: slides

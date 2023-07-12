@@ -28,7 +28,7 @@ agenda <- read.csv("documents/agenda_final.csv")
 -   Exam 1 Solution [here](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8f83639c-2177-4b75-a117-b03800e635a7)
 -   Make sure you review the [Activity Solutions](/course-solutions.html)
 -   I suggest spacing out the lessons so you are working on 1 a day.
--   Exam 2 is due by Sunday July 16th 11:59pm CT; take whenever you are ready.
+-   Exam 2 (covering Ch 5 - 9.1) is due by Sunday July 16th 11:59pm CT; take whenever you are ready.
 :::
 
 ::: alert
@@ -185,7 +185,7 @@ Watch [Practice Exam 2 Solution](https://northwestern.hosted.panopto.com/Panopto
 :::
 
 ::: exam
-Exam 2 is due by Sunday July 16th 11:59pm CT.
+Exam 2 (covering Ch 5 - 9.1) is due by Sunday July 16th 11:59pm CT.
 
 Important:
 

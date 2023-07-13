@@ -33,6 +33,10 @@ website:
     contents:
         - href: index.qmd
           text: About
+        - href: course-project.qmd
+          text: Final project
+        - href: course-week5.qmd
+          text: Week 5 (July 15 - 21)
         - href: course-week4.qmd
           text: Week 4 (July 08 - 14)
         - href: course-week3.qmd
@@ -41,16 +45,12 @@ website:
           text: Week 2 (June 24 - 30)
         - href: course-week1.qmd
           text: Week 1 (June 20 - 23)
-        # - href: course-project.qmd
-        #   text: Final project
         # - href: course-anu.qmd
         #   text: Accessible NU
         - section: "Additional Resources"
           contents:
           - href: course-syllabus.qmd
             text: Syllabus
-        #   - href: course-team.qmd
-        #     text: Office hours
         #   - href: course-links.qmd
         #     text: Useful links
         #   - href: course-lectures.qmd

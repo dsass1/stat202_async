@@ -2,15 +2,24 @@
 title: "Final Project"
 ---
 
+
+::: video
+Watch [Final Project Instructions](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fea8b6ab-430c-471c-84ff-b03e00f2566c)
+:::
+
+The final project is due on **Sunday July 30th 11:59pm**. 
+
+**Early submission bonus:** Projects submitted by **Thursday July 27th 11:59pm** will receive 1 bonus point towards the final project (2% bonus). Why? I have a grading deadline and being able to grade some projects early is a huge help. Do NOT rush to turn in a project early simply for the bonus point. The bonus will not make up for a poor quality project; only turn your project in early if you can submit a **quality report** by then.
+
 The final project is to be completed **alone** or in **groups of 2-4**.
 
-The final project is due on **Sunday July 30th 11:59pm**. Groups are expected to submit their project electronically to Canvas, similar to how you submit your work for daily activities. You will type your project directly into a qmd file and knit an html document. You should **submit both your .qmd and .html** file (and dataset if you chose one other than the one I provided). **Only ONE person** from the group needs to submit the project. Make sure everyone's name is on the project. Failure to submit both the .qmd and .html will result in a deduction.
+Groups are expected to submit their project electronically to Canvas, similar to how you submit your work for daily activities. You will type your project directly into a qmd file and knit an html document. You should **submit both your .qmd and .html** file (and dataset if you chose one other than the one I provided). **Only ONE person** from the group needs to submit the project. Make sure everyone's name is on the project. Failure to submit both the .qmd and .html will result in a deduction.
 
 This should read as a report! The project should be in paragraphs and complete sentences within the context of your dataset when appropriate. Do not bold or italicize your entire paper. Do not begin a section with code, you should introduce context before showing graphics/code. Students are expected to also show their work (i.e., include your R code). Your target audience is the grader and myself, we want to see your code and the output of your code.
 
 ## Choose a Group
 
-Fill out the Final Project Survey! Due by 7/14 11:59pm. If you would like to be in a group and do not know anyone in the class I will assign you to a group. If you do not fill out the survey you lose out on participation points and you will work on the project alone.
+Fill out the Final Project Survey! **Due by 7/14 11:59pm**. If you would like to be in a group and do not know anyone in the class I will assign you to a group. If you do not fill out the survey you lose out on participation points and you will work on the project alone.
 
 You can communicate with your group through the Canvas group, make a group on Campuswire, or exchange email.
 
@@ -95,7 +104,7 @@ Once you have chosen your dataset you will need to conduct an analysis and creat
 ## Project rubric (50 points)
 
 |                                                  | 0                                                                                 |       | 2                                                                               |                                                                                                                                         | 4                                                                                                                                                                                                                    |
-|--------------------------------------------------|-----------------------------------------------------------------------------------|-------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-----------|-----------|-----------|-----------|-----------|-------------------|
 | Neatness, Organization, Introduction, Conclusion |                                                                                   |       |                                                                                 |                                                                                                                                         | Use complete sentences; minimal typos; reads as a report; names; headers formatted correctly; suppress warning or messages; introduction and conclusion present with minimum requirements                            |
 |                                                  | **0**                                                                             |       | **1**                                                                           |                                                                                                                                         | **2**                                                                                                                                                                                                                |
 | Data Overview                                    |                                                                                   |       |                                                                                 |                                                                                                                                         | Thoroughly explored your data using at a minimum the criteria in the project outline.                                                                                                                                |

@@ -32,9 +32,17 @@ agenda <- read.csv("documents/agenda_final.csv")
 :::
 
 ::: tutorial
-Complete [Course Survey 2](https://canvas.northwestern.edu/courses/192604/quizzes/209278)
+Complete [Course Survey 2](https://canvas.northwestern.edu/courses/192604/quizzes/209275)
 
 (Don't skip this it's anonymous and worth points!)
+:::
+
+
+::: alert
+Check out the  [Final Project Tab](/course-project.html)
+
+  - you are free to begin working on the project whenever you would like
+  - Final project is due 7/30 11:59pm
 :::
 
 ::: slide-deck
@@ -151,7 +159,7 @@ Submit [Activity 17](https://canvas.northwestern.edu/courses/192604/assignments/
 **Lesson 18**
 
 ::: video
-Watch [lecture video]()
+Watch [lecture video](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7216a1d2-ed47-46af-aab6-b03c00fc51ce)
 :::
 
 ::: slides
@@ -183,6 +191,18 @@ Submit [Activity 18](https://canvas.northwestern.edu/courses/192604/assignments/
 Selected Exercise Guide for Activities 15 - 18. Suggest watching AFTER you have attempted the activity.
 
 ::: video
-Upcoming <!-- Watch [selected solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=661d6219-cdb9-4d90-b1eb-b02900f70e88) -->
+Watch [Activity 15 solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=80722f10-0306-49db-93b3-b03d01113091)
+:::
+
+::: video
+Watch [Activity 16 solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4456df7b-cf35-4834-bbc6-b03d01113071)
+:::
+
+::: video
+Watch [Activity 17 solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=74f0674f-4753-4781-9114-b03d014c51c9)
+:::
+
+::: video
+Watch [Activity 18 solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=53569631-a392-4181-b701-b03d014c51a7)
 :::
 :::

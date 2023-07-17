@@ -35,6 +35,8 @@ website:
           text: About
         - href: course-project.qmd
           text: Final project
+        - href: course-week6.qmd
+          text: Week 6 (July 12 - 30)
         - href: course-week5.qmd
           text: Week 5 (July 15 - 21)
         - href: course-week4.qmd

@@ -35,7 +35,7 @@ agenda <- read.csv("documents/agenda_final.csv")
 **Lesson 19**
 
 ::: video
-Watch [lecture video]()
+Watch [lecture video](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=84c05231-7ae9-4648-864e-b03c00fc5201)
 :::
 
 ::: slides
@@ -67,7 +67,7 @@ Submit [Activity 19](https://canvas.northwestern.edu/courses/192604/assignments/
 **Lesson 20**
 
 ::: video
-Watch [lecture video]()
+Watch [lecture video](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=28624328-8479-4fdb-984d-b03c00fc528c)
 :::
 
 ::: slides
@@ -89,8 +89,13 @@ Submit [Activity 20](https://canvas.northwestern.edu/courses/192604/assignments/
 ::: lab
 Selected Exercise Guide for Activities 19 - 20. Suggest watching AFTER you have attempted the activity.
 
+
 ::: video
-Upcoming <!-- Watch [selected solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=661d6219-cdb9-4d90-b1eb-b02900f70e88) -->
+Watch [Activity 19 solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=47672cfa-cbc8-4796-b5fb-b04200f81068)
+:::
+
+::: video
+Watch [Activity 20 solution guide](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2c23c619-472d-443e-b9e9-b04200f8102c)
 :::
 :::
 
@@ -98,7 +103,7 @@ Upcoming <!-- Watch [selected solution guide](https://northwestern.hosted.panopt
 ::: slide-deck
 Take [Practice Exam 3](https://amkuyper.shinyapps.io/sample_exam3_v2/)
 
--   The actual exam will be self-timed (set a timer!) anything submitted after 60 minutes will not be graded.
+-   The actual exam will be self-timed (set a timer!) for 60 minutes.
 
 ::: video
 Upcoming: Watch [Practice Exam 3 Solution]()
@@ -111,26 +116,26 @@ Exam 3 is due by Friday July 28th 11:59pm CT.
 Important:
 
 -   Set a timer for 60 minutes (or your ANU time).
+-   **If you run out of time still finish and submit the problems you are working on - I will be the judge if it is excessive time.**
 -   Don't spend too long on one question! Pace yourself. Students take these exams during the school year in 50 minutes - I am giving you 10 extra minutes.
 -   Strongly suggest making a one page "cheat-sheet". While this exam is open note/open book - **if you do not understand the material you will NOT finish within the time limit - study**!.
 -   Make sure you SUBMIT every Exercise and Question (not just run code you must click Submit). Unsubmitted exercises = 0
 -   Check your submissions BEFORE locking the exam. Once you lock the exam no changes can be made.
 -   Strongly suggest taking the practice exam prior.
--   I do not check my email on the weekend. If you run into technical difficulties over the weekend, I will respond on Monday.
 -   Good luck!
 
 ::: video
 [Exam directions](https://northwestern.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a3d44862-c110-432a-b538-b02f00e70d18) - same as Exam 1 but might be a good refresher.
 :::
 
-Take [Exam 3](https://posit.cloud/spaces/321338/content/5176506)
+Take [Exam 3](https://posit.cloud/spaces/321338/content/5176507)
 
-Submit [Exam 3](https://canvas.northwestern.edu/courses/192604/assignments/1244662)
+Submit [Exam 3](https://canvas.northwestern.edu/courses/192604/assignments/1244664)
 :::
 
 
 ::: tutorial
-Complete [Course Survey 3](https://canvas.northwestern.edu/courses/192604/quizzes/209278)
+Complete [Course Survey 3](https://canvas.northwestern.edu/courses/192604/quizzes/212405)
 
 (Don't skip this it's anonymous and worth points!)
 :::

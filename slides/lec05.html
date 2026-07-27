@@ -6,8 +6,8 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.38">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
 
   <title>STAT 202 – Data Wrangling   Chapter 3.0 - 3.3</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -19,10 +19,13 @@
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -551,26 +554,26 @@ d) not enough information</code></pre>
 <p>Consider the <code>penguins</code> dataset.</p>
 <p><font size="6">Summarize the average <code>flipper_length_mm</code> and count for penguins that are either “Adelie” <code>species</code> or “Gentoo” <code>species</code>. Which of the following is correct?</font></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23" data-code-line-numbers="6-10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb23-1" class="hljs-ln-code"><a></a><span class="co"># a)</span></span>
-<span id="cb23-2" class="hljs-ln-code"><a></a>penguins_summary_a <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb23-3" class="hljs-ln-code"><a></a>  <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span> <span class="sc">|</span> <span class="st">"Gentoo"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb23-4" class="hljs-ln-code"><a></a>  <span class="fu">summarize</span>(<span class="at">mean =</span> <span class="fu">mean</span>(flipper_length_mm),</span>
-<span id="cb23-5" class="hljs-ln-code"><a></a>            <span class="at">count =</span> <span class="fu">n</span>() )</span>
-<span id="cb23-6" class="hljs-ln-code"><a></a><span class="co"># b)</span></span>
-<span id="cb23-7" class="hljs-ln-code"><a></a>penguins_summary_b <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb23-8" class="hljs-ln-code"><a></a>  <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span> <span class="sc">|</span> species <span class="sc">==</span> <span class="st">"Gentoo"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb23-9" class="hljs-ln-code"><a></a>  <span class="fu">summarize</span>(<span class="at">mean =</span> <span class="fu">mean</span>(flipper_length_mm),</span>
-<span id="cb23-10" class="hljs-ln-code"><a></a>            <span class="at">count =</span> <span class="fu">n</span>() )</span>
-<span id="cb23-11" class="hljs-ln-code"><a></a><span class="co">#c)</span></span>
-<span id="cb23-12" class="hljs-ln-code"><a></a>penguins_summary_c <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb23-13" class="hljs-ln-code"><a></a>  <span class="fu">summarize</span>(<span class="at">mean =</span> <span class="fu">mean</span>(flipper_length_mm),</span>
-<span id="cb23-14" class="hljs-ln-code"><a></a>            <span class="at">count =</span> <span class="fu">n</span>(flipper_length_mm) ) <span class="sc">%&gt;%</span> </span>
-<span id="cb23-15" class="hljs-ln-code"><a></a>  <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span> <span class="sc">|</span> species <span class="sc">==</span> <span class="st">"Gentoo"</span>)</span>
-<span id="cb23-16" class="hljs-ln-code"><a></a><span class="co">#d)</span></span>
-<span id="cb23-17" class="hljs-ln-code"><a></a>penguins_summary_d <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb23-18" class="hljs-ln-code"><a></a>  <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span> <span class="sc">&amp;</span> species <span class="sc">==</span> <span class="st">"Gentoo"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb23-19" class="hljs-ln-code"><a></a>  <span class="fu">summarize</span>(<span class="at">mean =</span> <span class="fu">mean</span>(flipper_length_mm),</span>
-<span id="cb23-20" class="hljs-ln-code"><a></a>            <span class="at">count =</span> <span class="fu">n</span>() )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23" data-code-line-numbers="6-10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb23-1" class="hljs-ln-code"><a aria-label="1"></a><span class="co"># a)</span></span>
+<span id="cb23-2" class="hljs-ln-code"><a aria-label="2"></a>penguins_summary_a <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb23-3" class="hljs-ln-code"><a aria-label="3"></a>  <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span> <span class="sc">|</span> <span class="st">"Gentoo"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb23-4" class="hljs-ln-code"><a aria-label="4"></a>  <span class="fu">summarize</span>(<span class="at">mean =</span> <span class="fu">mean</span>(flipper_length_mm),</span>
+<span id="cb23-5" class="hljs-ln-code"><a aria-label="5"></a>            <span class="at">count =</span> <span class="fu">n</span>() )</span>
+<span id="cb23-6" class="hljs-ln-code"><a aria-label="6"></a><span class="co"># b)</span></span>
+<span id="cb23-7" class="hljs-ln-code"><a aria-label="7"></a>penguins_summary_b <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb23-8" class="hljs-ln-code"><a aria-label="8"></a>  <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span> <span class="sc">|</span> species <span class="sc">==</span> <span class="st">"Gentoo"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb23-9" class="hljs-ln-code"><a aria-label="9"></a>  <span class="fu">summarize</span>(<span class="at">mean =</span> <span class="fu">mean</span>(flipper_length_mm),</span>
+<span id="cb23-10" class="hljs-ln-code"><a aria-label="10"></a>            <span class="at">count =</span> <span class="fu">n</span>() )</span>
+<span id="cb23-11" class="hljs-ln-code"><a aria-label="11"></a><span class="co">#c)</span></span>
+<span id="cb23-12" class="hljs-ln-code"><a aria-label="12"></a>penguins_summary_c <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb23-13" class="hljs-ln-code"><a aria-label="13"></a>  <span class="fu">summarize</span>(<span class="at">mean =</span> <span class="fu">mean</span>(flipper_length_mm),</span>
+<span id="cb23-14" class="hljs-ln-code"><a aria-label="14"></a>            <span class="at">count =</span> <span class="fu">n</span>(flipper_length_mm) ) <span class="sc">%&gt;%</span> </span>
+<span id="cb23-15" class="hljs-ln-code"><a aria-label="15"></a>  <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span> <span class="sc">|</span> species <span class="sc">==</span> <span class="st">"Gentoo"</span>)</span>
+<span id="cb23-16" class="hljs-ln-code"><a aria-label="16"></a><span class="co">#d)</span></span>
+<span id="cb23-17" class="hljs-ln-code"><a aria-label="17"></a>penguins_summary_d <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb23-18" class="hljs-ln-code"><a aria-label="18"></a>  <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span> <span class="sc">&amp;</span> species <span class="sc">==</span> <span class="st">"Gentoo"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb23-19" class="hljs-ln-code"><a aria-label="19"></a>  <span class="fu">summarize</span>(<span class="at">mean =</span> <span class="fu">mean</span>(flipper_length_mm),</span>
+<span id="cb23-20" class="hljs-ln-code"><a aria-label="20"></a>            <span class="at">count =</span> <span class="fu">n</span>() )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="example-3-continued" class="slide level2" data-auto-animate="true">
@@ -594,11 +597,11 @@ d) not enough information</code></pre>
 <h2 data-id="quarto-animate-title">Example 3 (continued)</h2>
 <p>Print the data summary.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb26-1" class="hljs-ln-code"><a></a>penguins_summary_b <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb26-2" class="hljs-ln-code"><a></a>  <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span> <span class="sc">|</span> species <span class="sc">==</span> <span class="st">"Gentoo"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb26-3" class="hljs-ln-code"><a></a>  <span class="fu">summarize</span>(<span class="at">mean =</span> <span class="fu">mean</span>(flipper_length_mm, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb26-4" class="hljs-ln-code"><a></a>            <span class="at">count =</span> <span class="fu">n</span>() )</span>
-<span id="cb26-5" class="hljs-ln-code"><a></a>penguins_summary_b</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb26-1" class="hljs-ln-code"><a aria-label="1"></a>penguins_summary_b <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb26-2" class="hljs-ln-code"><a aria-label="2"></a>  <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span> <span class="sc">|</span> species <span class="sc">==</span> <span class="st">"Gentoo"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb26-3" class="hljs-ln-code"><a aria-label="3"></a>  <span class="fu">summarize</span>(<span class="at">mean =</span> <span class="fu">mean</span>(flipper_length_mm, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb26-4" class="hljs-ln-code"><a aria-label="4"></a>            <span class="at">count =</span> <span class="fu">n</span>() )</span>
+<span id="cb26-5" class="hljs-ln-code"><a aria-label="5"></a>penguins_summary_b</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 2
    mean count
